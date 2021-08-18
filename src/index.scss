@@ -62,6 +62,12 @@ a {
   padding-left: 26px !important;
   padding-right: 26px !important;
   text-align: center;
+  @media (min-width: 1200px) and (max-width: 1400px) {
+    padding-left: 10px !important;
+  }
+  @media (max-width: 426px) {
+    padding-left: 0 !important;
+  }
 }
 .nav-btn {
   color: #ffffff !important;
@@ -311,7 +317,7 @@ a {
 
 .audit-section {
   background-color: #1f2334;
-  padding: 100px 0px 150px;
+  padding: 100px 0px 100px;
   .audit-heading {
     color: #ffffff;
     font-size: 24px;
@@ -352,11 +358,63 @@ a {
       align-items: center;
     }
   }
+
+  .betnomi-popup {
+    position: relative;
+    margin: auto;
+    margin-top: 5%;
+    @media (max-width: 425px) {
+      margin-top: 17%;
+    }
+
+    .betnomi-inner-popup {
+      background-color: #2a2e42;
+      border-radius: 16px;
+      padding: 1px;
+    }
+
+    .betnomi-detail-block {
+      margin: 10px 20px 0;
+      .betnomi-inner-block {
+        padding: 12px 0 0;
+        .popup-heading {
+          color: #696e87;
+          font-size: 14px;
+          line-height: 18px;
+          margin: 4px 0;
+          padding: 0 26px;
+        }
+        .popup-text {
+          margin-right: 18px;
+          color: #ffffff;
+          font-size: 14px;
+          line-height: 18px;
+        }
+      }
+      img {
+        padding: 0 32px;
+        border-right: 1px solid #313549;
+      }
+    }
+
+    .betnomi-popup-address {
+      padding: 14px;
+      margin: 32px;
+      background-color: rgba(105, 110, 135, 0.1);
+      border-radius: 8px;
+      color: #878b9f;
+      font-size: 16px;
+      line-height: 24px;
+      font: 500;
+      text-align: center;
+      overflow-wrap: break-word;
+    }
+  }
 }
 
 .partner-section {
   background-color: #181b29;
-  padding: 180px 0px 100px;
+  padding: 100px 0px 100px;
   position: relative;
 
   .partner-heading {
@@ -399,56 +457,7 @@ a {
       cursor: pointer;
     }
   }
-  .betnomi-popup {
-    position: absolute;
-    top: -18%;
-    left: 0;
-    right: 0;
-    margin: auto;
 
-    .betnomi-inner-popup {
-      background-color: #2a2e42;
-      border-radius: 16px;
-      padding: 1px;
-    }
-
-    .betnomi-detail-block {
-      margin: 10px 20px 0;
-      .betnomi-inner-block {
-        padding: 12px 0 0;
-        .popup-heading {
-          color: #696e87;
-          font-size: 14px;
-          line-height: 18px;
-          margin: 4px 0;
-          padding: 0 26px;
-        }
-        .popup-text {
-          margin-right: 18px;
-          color: #ffffff;
-          font-size: 14px;
-          line-height: 18px;
-        }
-      }
-      img {
-        padding: 0 32px;
-        border-right: 1px solid #313549;
-      }
-    }
-
-    .betnomi-popup-address {
-      padding: 14px;
-      margin: 32px;
-      background-color: #696e87;
-      border-radius: 8px;
-      color: #878b9f;
-      font-size: 16px;
-      line-height: 24px;
-      font: 500;
-      text-align: center;
-      overflow-wrap: break-word;
-    }
-  }
   .border-right {
     border-right: 1px solid #313549;
   }
@@ -563,7 +572,7 @@ a {
     min-height: 198px !important;
   }
   .audit-section {
-    padding: 100px 0 190px !important;
+    padding: 100px 0 100px !important;
   }
   .social-img {
     width: 92px !important;
@@ -572,7 +581,7 @@ a {
     top: -28% !important;
   }
   .partner-section {
-    padding: 200px 0 100px !important;
+    padding: 100px 0 100px !important;
   }
   .col-md-none {
     display: none !important;
@@ -630,7 +639,7 @@ a {
     padding: 0 30px !important;
   }
   .audit-section {
-    padding: 80px 0px 300px !important;
+    padding: 80px 0px 80px !important;
   }
   .partner-img {
     width: 175px !important;
@@ -679,7 +688,7 @@ a {
     border-top: 1px dashed #313549;
   }
   .partner-section {
-    padding: 230px 0 100px !important;
+    padding: 100px 0 100px !important;
   }
   .flex-sm-none {
     display: none !important;
@@ -756,10 +765,10 @@ a {
     padding: 0 18px !important;
   }
   .partner-section {
-    padding: 242px 0 100px !important;
+    padding: 100px 0 100px !important;
   }
   .audit-section {
-    padding: 80px 0 296px !important;
+    padding: 80px 0 80px !important;
   }
   .last-product-block {
     min-height: 256px;
@@ -768,7 +777,27 @@ a {
     min-height: 224px !important;
   }
 }
+@media (min-width: 1200px) {
+  .betnomi-popup {
+    position: relative;
+    top: 4rem;
+    margin: auto;
+    padding: 0 20px;
+    z-index: 1;
+    margin-top: 0 !important;
+  }
+  .audit-section {
+    padding: 100px 0px 0px;
+    margin-bottom: -3rem;
+  }
+  .partner-section {
+    padding: 200px 0px 100px;
+  }
+}
 
 .rotate {
   transform: rotate(-90deg);
+}
+.mt-5r {
+  margin-top: 5rem;
 }

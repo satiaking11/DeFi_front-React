@@ -646,16 +646,7 @@ function App() {
             </button>
           </div>
    
-
-
-      
-      </div>
-    </div>
-    
-    <div className="partner-section">
-        <Partners />
-
-        <div className="betnomi-popup container">
+        <div className="betnomi-popup">
           <div className="betnomi-inner-popup">
             <div className="betnomi-detail-block">
               <div className="row justify-content-center">
@@ -712,6 +703,13 @@ function App() {
             </div>
           </div>
         </div>
+
+      
+      </div>
+    </div>
+    
+    <div className="partner-section">
+        <Partners />
     </div>
 
       <div className="footer-section">

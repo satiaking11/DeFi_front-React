@@ -21,8 +21,7 @@ const Partners = (props) => {
 
     return (
         <div className="container">
-            
-            <div className={`partner-heading ${ShowMore ? '' : 'mt-5'}`}>Our Partners, Integrations and Markets</div>
+            <div className='partner-heading'>Our Partners, Integrations and Markets</div>
             <div className="col-md-none">
                 <div className="partner-imgs-block">
                     <div className="partner-img">
