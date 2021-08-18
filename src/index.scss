@@ -1,0 +1,774 @@
+@font-face {
+  font-family: "Poppins";
+  src: url("/assets/Fonts/Poppins/Poppins-Regular.ttf");
+}
+
+* {
+  font-family: "Poppins";
+}
+a {
+  text-decoration: none !important;
+}
+.col-md-none {
+  display: block !important;
+}
+.flex-sm-none {
+  display: flex;
+}
+.col-md-display {
+  display: none !important;
+}
+.col-sm-display {
+  display: none !important;
+}
+.col-md-none {
+  display: block !important;
+}
+.carousel-indicators {
+  bottom: -48px !important;
+}
+.carousel-indicators [data-bs-target] {
+  border-radius: 50%;
+  height: 8px !important;
+  width: 8px !important;
+  background-color: #6ad035 !important;
+}
+.slider-nav-clr [data-bs-target] {
+  background-color: #696e87 !important;
+}
+
+.carousel-control-next-icon {
+  background-image: none !important;
+}
+.carousel-control-prev-icon {
+  background-image: none !important;
+}
+
+.main-container {
+  padding: 0 30px 130px 30px;
+  background-image: url(assets/images/head.png);
+  background-position: center;
+  background-size: cover;
+}
+.navbar {
+  padding-top: 38px !important;
+  padding-bottom: 38px !important;
+  background-color: #181b29 !important;
+}
+.nav-link {
+  color: #ffffff !important;
+  font-size: 16px !important;
+  font-weight: 500;
+  padding-left: 26px !important;
+  padding-right: 26px !important;
+  text-align: center;
+}
+.nav-btn {
+  color: #ffffff !important;
+  background-color: #6ad035 !important;
+  padding: 12px 24px !important;
+  border-radius: 8px !important;
+  font-weight: 700 !important;
+}
+.banner-heading {
+  font-size: 52px !important;
+  font-weight: 700;
+  line-height: 72px !important;
+}
+.body-text {
+  font-size: 16px !important;
+  line-height: 24px !important;
+}
+.header-btns {
+  display: flex !important;
+  margin-top: 36px !important;
+}
+.play-btn {
+  background-color: #313549;
+  border-radius: 8px;
+  padding: 6px 24px 6px 6px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: #ffffff !important;
+
+  .play-icon {
+    background-color: #6ad035;
+    border-radius: 6px;
+    padding: 12px;
+    margin-right: 24px;
+  }
+  .play-btn-text {
+    font-size: 14px;
+    line-height: 21px;
+  }
+}
+.launch-btn {
+  background-color: #6ad035;
+  border-radius: 8px;
+  padding: 14px 24px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: #ffffff !important;
+  width: max-content;
+  font-size: 14px;
+  line-height: 21px;
+}
+.banner-img {
+  height: 580px;
+  width: 560px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-section {
+  background-color: #181b29;
+  padding: 0px 30px 50px;
+  .products-inner-block {
+    border-radius: 18px;
+    padding: 80px 105px;
+    background-color: #fbfbfc !important;
+    position: relative;
+    .small-heading {
+      font-size: 24px;
+      line-height: 36px;
+      text-align: center;
+      color: #222638;
+    }
+    .body-text-gray {
+      color: #696e87 !important;
+    }
+    .products {
+      background-color: transparent !important;
+      .product-inner-box {
+        box-shadow: 0px 32px 64px rgba(47, 51, 73, 0.04);
+        border-radius: 12px;
+        background-color: #ffffff !important;
+        min-height: 224px;
+      }
+      .product-img {
+        height: 106px;
+        width: 106px;
+      }
+      .product-neg-margin {
+        margin-top: -15px;
+        .product-heading {
+          font-size: 14px;
+          line-height: 21px;
+          font-weight: 600;
+          color: #222638;
+        }
+        .product-text {
+          font-size: 14px;
+          line-height: 18px;
+          color: #696e87;
+        }
+      }
+    }
+    .last-product-block {
+      background-color: transparent !important;
+      box-shadow: none !important;
+      .game-quantity-block {
+        font-size: 24px;
+        line-height: 36px;
+        font-weight: 500;
+        padding: 20px !important;
+        color: #222638;
+        .game-quantity {
+          color: #6ad035 !important;
+        }
+      }
+    }
+  }
+  .arrow-clip {
+    position: absolute;
+    top: -42px;
+    left: 6%;
+    background-color: #fbfbfc;
+    border-radius: 50%;
+    height: 76px;
+    width: 76px;
+    display: flex;
+    justify-content: center;
+    .arrow-icon {
+      background-color: #e1e2e7;
+      border-radius: 50%;
+      height: 44px;
+      width: 44px;
+      margin-top: 10px !important;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
+
+.dao-section {
+  background-color: #181b29;
+  padding: 100px 30px;
+  .dao-img {
+    height: 410px;
+    width: 410px;
+  }
+  .dao-heading {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 52px;
+    color: #ffffff;
+  }
+}
+
+.token-section {
+  padding: 100px 0;
+  background-color: #fbfbfc;
+
+  .token-heading {
+    font-size: 36px;
+    line-height: 52px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #222638;
+  }
+
+  .dropdown-toggle {
+    border: 1px solid #f0f1f3;
+    border-radius: 8px;
+    padding: 16px !important;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    &::after {
+      content: none !important;
+    }
+    .token-icon-text {
+      display: flex;
+      align-items: center;
+    }
+    .dropdown-icon {
+      height: 24px;
+      width: 24px;
+    }
+    .dropdown-text {
+      color: #222638;
+      font-size: 18px;
+      line-height: 24px;
+      font-weight: 500;
+      margin-left: 16px;
+    }
+    .token-arrow {
+      height: 24px;
+      width: 24px;
+    }
+  }
+  .dropdown-menu {
+    width: 90% !important;
+  }
+
+  .token-content-block {
+    background-color: #ffffff;
+    border-radius: 16px;
+    padding: 36px;
+    .token-img {
+      height: 64px;
+      width: 64px;
+    }
+    .token-content-heading {
+      color: #222638;
+      font-size: 24px;
+      line-height: 36px;
+      font-weight: 600;
+      margin-top: 16px;
+      margin-bottom: 16px;
+    }
+    .token-text {
+      font-size: 16px;
+      line-height: 24px;
+      color: #696e87;
+    }
+  }
+}
+.token-img {
+  height: 64px;
+  width: 64px;
+}
+.token-content-heading {
+  color: #222638;
+  font-size: 24px;
+  line-height: 36px;
+  font-weight: 600;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+.token-text {
+  font-size: 16px;
+  line-height: 24px;
+  color: #696e87;
+}
+
+.audit-section {
+  background-color: #1f2334;
+  padding: 100px 0px 150px;
+  .audit-heading {
+    color: #ffffff;
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: 500;
+    text-align: center;
+  }
+  .audit-text {
+    color: #696e87;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    margin-top: 16px;
+  }
+  .audit-items {
+    padding: 26px 22px;
+    background-color: #ffffff;
+    box-shadow: 0px 32px 64px rgba(47, 51, 73, 0.04);
+    border-radius: 12px;
+    .audit-item-img {
+      height: 32px;
+      width: 103px;
+      margin-bottom: 16px;
+    }
+    .audit-item-text {
+      font-size: 12px;
+      line-height: 18px;
+      color: #696e87;
+      margin-bottom: 16px;
+      min-height: 144px;
+    }
+    .audit-link {
+      color: #6ad035;
+      font-size: 14px;
+      line-height: 18px;
+      font-weight: 500;
+      display: flex;
+      align-items: center;
+    }
+  }
+}
+
+.partner-section {
+  background-color: #181b29;
+  padding: 180px 0px 100px;
+  position: relative;
+
+  .partner-heading {
+    color: #ffffff;
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 36px;
+  }
+  .partner-imgs-block {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .partner-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    width: 185px;
+    flex-grow: 1;
+    flex-shrink: 0;
+    margin: 12px 16px;
+  }
+  .partner-img-cell {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    flex-grow: 1;
+    flex-shrink: 0;
+    margin: 12px 16px;
+    button {
+      color: green;
+      text-decoration: underline;
+      background-color: inherit;
+      border: 0;
+      cursor: pointer;
+    }
+  }
+  .betnomi-popup {
+    position: absolute;
+    top: -18%;
+    left: 0;
+    right: 0;
+    margin: auto;
+
+    .betnomi-inner-popup {
+      background-color: #2a2e42;
+      border-radius: 16px;
+      padding: 1px;
+    }
+
+    .betnomi-detail-block {
+      margin: 10px 20px 0;
+      .betnomi-inner-block {
+        padding: 12px 0 0;
+        .popup-heading {
+          color: #696e87;
+          font-size: 14px;
+          line-height: 18px;
+          margin: 4px 0;
+          padding: 0 26px;
+        }
+        .popup-text {
+          margin-right: 18px;
+          color: #ffffff;
+          font-size: 14px;
+          line-height: 18px;
+        }
+      }
+      img {
+        padding: 0 32px;
+        border-right: 1px solid #313549;
+      }
+    }
+
+    .betnomi-popup-address {
+      padding: 14px;
+      margin: 32px;
+      background-color: #696e87;
+      border-radius: 8px;
+      color: #878b9f;
+      font-size: 16px;
+      line-height: 24px;
+      font: 500;
+      text-align: center;
+      overflow-wrap: break-word;
+    }
+  }
+  .border-right {
+    border-right: 1px solid #313549;
+  }
+}
+
+.footer-section {
+  background-color: #222638;
+  padding: 16px 0 50px;
+
+  .social-imgs-block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 8px 8px;
+
+    .social-img {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 60px;
+      width: 170px;
+      flex-grow: 1;
+      flex-shrink: 0;
+      margin: 12px 22px;
+    }
+  }
+  .solid-bottom-border {
+    border-bottom: 1px solid #313549;
+  }
+  .footer-imgs-block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 26px 0;
+    border-bottom: 1px dashed #313549;
+
+    .footer-img {
+      height: 32px;
+      width: 146px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+  .footer-text {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+    color: #696e87;
+    padding: 18px 0px;
+  }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1200px) {
+  .product-inner-box {
+    min-height: 263px !important;
+  }
+  .banner-img {
+    height: 460px;
+    width: 460px;
+  }
+  .audit-item-text {
+    min-height: 198px !important;
+  }
+  .social-img {
+    width: 140px !important;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .banner-heading {
+    font-size: 32px !important;
+    line-height: 48px !important;
+  }
+  .products-inner-block {
+    padding: 60px !important;
+  }
+  .product-inner-box {
+    min-height: 242px !important;
+  }
+  .arrow-clip {
+    top: -36px !important;
+    left: 8% !important;
+  }
+  .game-quantity-block {
+    font-size: 20px !important;
+  }
+  .dao-img {
+    height: 300px !important;
+    width: 300px !important;
+  }
+  .dao-heading {
+    font-size: 28px !important;
+  }
+  .dao-section {
+    padding: 70px 30px !important;
+  }
+  .banner-img {
+    height: 340px;
+    width: 420px;
+  }
+  .token-section {
+    .dropdown-toggle {
+      width: 100% !important;
+    }
+    .dropdown-menu {
+      width: 100% !important;
+    }
+  }
+  .audit-item-text {
+    min-height: 198px !important;
+  }
+  .audit-section {
+    padding: 100px 0 190px !important;
+  }
+  .social-img {
+    width: 92px !important;
+  }
+  .betnomi-popup {
+    top: -28% !important;
+  }
+  .partner-section {
+    padding: 200px 0 100px !important;
+  }
+  .col-md-none {
+    display: none !important;
+  }
+  .col-md-display {
+    display: block !important;
+  }
+  .col-md-none {
+    display: none !important;
+  }
+  .justify-md-center {
+    justify-content: center !important;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .products-inner-block {
+    padding: 60px 20px !important;
+  }
+  .product-inner-box {
+    min-height: 206px !important;
+  }
+  .dao-heading {
+    font-size: 28px !important;
+  }
+  .dao-section {
+    padding: 50px 30px !important;
+    a {
+      justify-content: center;
+    }
+  }
+  .arrow-clip {
+    top: -40px !important;
+    left: 36% !important;
+  }
+  .banner-img {
+    height: 360px;
+    width: 350px;
+  }
+  .banner-heading {
+    font-size: 32px !important;
+    line-height: 40px !important;
+  }
+  .token-heading {
+    font-size: 32px !important;
+  }
+  .token-arrow {
+    height: 20px !important;
+    width: 20px !important;
+  }
+  .audit-item-text {
+    min-height: 96px !important;
+  }
+  .padding-mobile {
+    padding: 0 30px !important;
+  }
+  .audit-section {
+    padding: 80px 0px 300px !important;
+  }
+  .partner-img {
+    width: 175px !important;
+    margin: 16px 8px !important;
+  }
+  .social-img {
+    width: 136px !important;
+    height: 32px !important;
+  }
+  .navbar {
+    padding: 16px 0 !important;
+  }
+  .nav-link {
+    text-align: left !important;
+  }
+  .nav-btn {
+    width: 100% !important;
+  }
+  .main-container {
+    padding: 0px 16px 130px !important;
+  }
+  .launch-md {
+    width: 100% !important;
+    display: flex;
+    justify-content: center;
+  }
+  .footer-img {
+    height: 30px !important;
+    width: 132px !important;
+  }
+  .footer-text {
+    font-size: 14px !important;
+    line-height: 24px !important;
+  }
+  .social-imgs-block {
+    justify-content: left !important;
+  }
+  .token-text {
+    font-size: 12px !important;
+    line-height: 16px !important;
+  }
+  .border-right {
+    border-right: none !important;
+  }
+  .border-top-dashed {
+    border-top: 1px dashed #313549;
+  }
+  .partner-section {
+    padding: 230px 0 100px !important;
+  }
+  .flex-sm-none {
+    display: none !important;
+  }
+  .last-product-block {
+    min-height: 238px;
+  }
+  .col-sm-display {
+    display: block !important;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .banner-img {
+    height: 290px;
+    width: 320px;
+  }
+  .play-icon {
+    margin-right: 8px !important;
+    padding: 8px !important;
+  }
+  .launch-btn {
+    padding: 11px 16px !important;
+  }
+  .banner-img {
+    height: 320px;
+    width: 292px;
+  }
+  .token-heading {
+    font-size: 25px !important;
+  }
+  .token-content-block {
+    padding: 28px !important;
+  }
+  .dropdown-text {
+    font-size: 16px !important;
+  }
+  .token-arrow {
+    height: 18px !important;
+    width: 18px !important;
+  }
+  .social-img {
+    width: 108px !important;
+    height: 26px !important;
+  }
+  .betnomi-popup {
+    top: -19% !important;
+  }
+  .audit-item-text {
+    min-height: 148px !important;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .banner-img {
+    height: 230px;
+    width: 270px;
+  }
+  .launch-btn {
+    width: max-content;
+  }
+  .dropdown-text {
+    font-size: 12px !important;
+  }
+  .social-img {
+    width: 96px !important;
+    height: 22px !important;
+  }
+  .dao-img {
+    height: 250px !important;
+    width: 300px !important;
+  }
+  .popup-heading {
+    padding: 0 18px !important;
+  }
+  .partner-section {
+    padding: 242px 0 100px !important;
+  }
+  .audit-section {
+    padding: 80px 0 296px !important;
+  }
+  .last-product-block {
+    min-height: 256px;
+  }
+  .product-empty-box {
+    min-height: 224px !important;
+  }
+}
+
+.rotate {
+  transform: rotate(-90deg);
+}
