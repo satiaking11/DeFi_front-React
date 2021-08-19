@@ -22,6 +22,7 @@ jobs:
         uses: actions/setup-node@v2
         with:
           node-version: '16'
+          
       - name: Obtain Key
         run: |
           node --version
@@ -35,5 +36,8 @@ jobs:
         run: CI=false npm run build
       
       - name: Deploy to staging server
-        run: ./.github/workflows/deploy-staging.sh
-        
+        run: |
+          ssh -i  ~/staging_key.pem centos@18.191.191.231 'sudo chown -R centos:centos /var/www/*'
+          scp -i  ~/staging_key.pem -r ./build/* centos@18.191.191.231:/var/www
+          ssh -i  ~/staging_key.pem centos@18.191.191.231 'sudo chown -R nginx:nginx /var/www/*'
+                
