@@ -4,7 +4,7 @@ name: Build and Deploy DEFI to staging server
 on:
   # Triggers the workflow on push or pull request events but only for the main branch
   push:
-    branches: [ main ]
+    branches: [ staging ]
 
 env:
   ssh_key: ${{ secrets.STAGING_SSH_KEY }}
@@ -25,7 +25,4 @@ jobs:
       - name: npm ci, build and test
         run: |
           node --version
-          npm install
-          npm run build 
-          echo $ssh_key > ~/staging_key.pem && chmod 600 ~/staging_key.pem
-          scp -i ~/staging_key.pem -r ./build/* centos@18.191.191.231:/var/www
+          ./deploy.sh
