@@ -1,4 +1,4 @@
-name: "[Staging] Build"
+name: "[Staging] Build & Deploy"
 
 # Controls when the action will run. 
 on:
@@ -25,7 +25,8 @@ jobs:
       - name: Obtain Key
         run: |
           node --version
-          echo $ssh_key > ~/staging_key.pem && chmod 600 ~/staging_key.pem
+          echo $ssh_key > ~/staging_key.pem
+          sudo chmod 600 ~/staging_key.pem
       
       - name: Install Dependencies
         run: npm install
