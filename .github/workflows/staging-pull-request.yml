@@ -24,7 +24,6 @@ jobs:
       - name: Obtain Key
         run: |
           node --version
-          echo $ssh_key > ~/staging_key.pem && chmod 600 ~/staging_key.pem
       
       - name: Install Dependencies
         run: npm install
