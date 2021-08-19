@@ -11,7 +11,7 @@ env:
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  build_test:
+  Staging:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
     # Steps represent a sequence of tasks that will be executed as part of the job
@@ -22,7 +22,17 @@ jobs:
         uses: actions/setup-node@v2
         with:
           node-version: '16'
-      - name: npm ci, build and test
+      - name: Obtain Key
         run: |
           node --version
-          ./.github/workflows/deploy-staging.sh
+          echo $ssh_key > ~/staging_key.pem && chmod 600 ~/staging_key.pem
+      
+      - name: Install Dependencies
+        run: npm install
+      
+      - name: Build
+        run: npm run build
+      
+      - name: Deploy to staging server
+        run: ./.github/workflows/deploy-staging.sh
+        
