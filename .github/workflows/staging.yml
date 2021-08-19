@@ -1,4 +1,4 @@
-name: Build and Deploy DEFI to staging server
+name: "[Production] Build"
 
 # Controls when the action will run. 
 on:
