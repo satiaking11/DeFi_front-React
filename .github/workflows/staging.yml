@@ -25,4 +25,4 @@ jobs:
       - name: npm ci, build and test
         run: |
           node --version
-          ./deploy.sh
+          ./.github/workflows/deploy-staging.sh
