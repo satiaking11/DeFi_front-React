@@ -1,9 +1,8 @@
-name: "[Staging] Build"
-
+name: "[Staging] Pull Request Build"
 # Controls when the action will run. 
 on:
   # Triggers the workflow on push or pull request events but only for the main branch
-  push:
+  pull_request:
     branches: [ staging ]
 
 env:
@@ -32,7 +31,3 @@ jobs:
       
       - name: Build
         run: CI=false npm run build
-      
-      - name: Deploy to staging server
-        run: ./.github/workflows/deploy-staging.sh
-        

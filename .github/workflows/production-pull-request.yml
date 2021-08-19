@@ -1,13 +1,13 @@
-name: "[Staging] Build"
+name: "[Production] Pull Request Build"
 
 # Controls when the action will run. 
 on:
   # Triggers the workflow on push or pull request events but only for the main branch
-  push:
-    branches: [ staging ]
+  pull_request:
+    branches: [ production ]
 
 env:
-  ssh_key: ${{ secrets.STAGING_SSH_KEY }}
+  ssh_key: ${{ secrets.PRODUCTION_SSH_KEY }}
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
@@ -25,14 +25,10 @@ jobs:
       - name: Obtain Key
         run: |
           node --version
-          echo $ssh_key > ~/staging_key.pem && chmod 600 ~/staging_key.pem
+          echo $ssh_key > ~/production_key.pem && chmod 600 ~/production_key.pem
       
       - name: Install Dependencies
         run: npm install
       
       - name: Build
-        run: CI=false npm run build
-      
-      - name: Deploy to staging server
-        run: ./.github/workflows/deploy-staging.sh
-        
+        run: npm run build
