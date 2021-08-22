@@ -36,8 +36,11 @@ jobs:
         run: CI=false npm run build
       
       - name: Deploy to staging server
+        env: 
+          STAGING_SSH_KEY: ${{ secrets.STAGING_SSH_KEY }} 
         run: |
-          ssh -i  ~/staging_key.pem centos@18.191.191.231 'sudo chown -R centos:centos /var/www/*'
-          scp -i  ~/staging_key.pem -r ./build/* centos@18.191.191.231:/var/www
-          ssh -i  ~/staging_key.pem centos@18.191.191.231 'sudo chown -R nginx:nginx /var/www/*'
+          echo "$STAGING_SSH_KEY" > ~/staging_key.pem
+          ssh -i -o StrictHostKeyChecking=no -i ~/staging_key.pem centos@18.191.191.231 'sudo chown -R centos:centos /var/www/*'
+          scp -i -o StrictHostKeyChecking=no -i ~/staging_key.pem -r ./build/* centos@18.191.191.231:/var/www
+          ssh -i -o StrictHostKeyChecking=no -i ~/staging_key.pem centos@18.191.191.231 'sudo chown -R nginx:nginx /var/www/*'
                 
