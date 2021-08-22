@@ -28,6 +28,17 @@ import ReportMobileCarousel from './Components/ReportCarouselMobile';
 import CoinDetailBox from './Components/CoinDetailBox';
 import Button from './Atoms/Button';
 
+import perсent from '../src/assets/images/animation_assets/percent.png'
+import person1 from '../src/assets/images/animation_assets/person_1.png'
+import person2 from '../src/assets/images/animation_assets/person_2.png'
+import person3 from '../src/assets/images/animation_assets/person_3.png'
+import person4 from '../src/assets/images/animation_assets/person_4.png'
+import graph_green from '../src/assets/images/animation_assets/graph_green.png'
+import graph_orange from '../src/assets/images/animation_assets/graph_orange.png'
+import graph_yellow from '../src/assets/images/animation_assets/graph_yellow.png'
+import graph_blue from '../src/assets/images/animation_assets/graph_blue.png'
+import Cards from './Animations/Cards';
+
 function App() {
     return (
         <>
@@ -72,12 +83,13 @@ function App() {
                             </div>
                         </div>
                         <div className="col-lg-6 col-md-12 order-1 order-lg-2 pb-3 text-white">
-                            <div className="banner-img mx-auto">
-                                <img
+                            <div className="banner-img mx-auto" style={{position: 'relative'}}>
+                                <Cards />
+                                {/* <img
                                     className="img-fluid"
                                     src={banner_img}
                                     alt=""
-                                />
+                                /> */}
                             </div>
                         </div>
                     </div>
@@ -186,11 +198,27 @@ function App() {
                     <div className="row align-items-center">
                         <div className="col-md-6 d-flex justify-md-center">
                             <div className="dao-img">
-                                <img
+                                {/* <img
                                     className="img-fluid mt-2"
                                     src={dao_img}
                                     alt=""
-                                />
+                                /> */}
+                                <div className="graph1">
+                                    <img className="person1" src={person1} />
+                                    <img className="graph-green" src={person1} />
+                                </div>
+                                <div className="graph2">
+                                    <img className="person1" src={person1} />
+                                    <img className="graph-green" src={person1} />
+                                </div>
+                                <div className="graph3">
+                                    <img className="person1" src={person1} />
+                                    <img className="graph-green" src={person1} />
+                                </div>
+                                <div className="graph4">
+                                    <img className="person1" src={person1} />
+                                    <img className="graph-green" src={person1} />
+                                </div>                                
                             </div>
                         </div>
                         <div className="col-md-6">
