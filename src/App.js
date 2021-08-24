@@ -1,4 +1,7 @@
-import React from 'react';
+import React, { useRef, useEffect } from 'react';
+// Gsap
+import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import banner_img from '../src/assets/images/image.png';
 import play_icon from '../src/assets/images/play.svg';
 import launch_icon from '../src/assets/images/launch.svg';
@@ -28,18 +31,127 @@ import ReportMobileCarousel from './Components/ReportCarouselMobile';
 import CoinDetailBox from './Components/CoinDetailBox';
 import Button from './Atoms/Button';
 
-import perсent from '../src/assets/images/animation_assets/percent.png'
-import person1 from '../src/assets/images/animation_assets/person_1.png'
-import person2 from '../src/assets/images/animation_assets/person_2.png'
-import person3 from '../src/assets/images/animation_assets/person_3.png'
-import person4 from '../src/assets/images/animation_assets/person_4.png'
-import graph_green from '../src/assets/images/animation_assets/graph_green.png'
-import graph_orange from '../src/assets/images/animation_assets/graph_orange.png'
-import graph_yellow from '../src/assets/images/animation_assets/graph_yellow.png'
-import graph_blue from '../src/assets/images/animation_assets/graph_blue.png'
+import perсent from '../src/assets/images/animation_assets/percent.png';
+import person1 from '../src/assets/images/animation_assets/person_1.png';
+import person2 from '../src/assets/images/animation_assets/person_2.png';
+import person3 from '../src/assets/images/animation_assets/person_3.png';
+import person4 from '../src/assets/images/animation_assets/person_4.png';
+import graph_green from '../src/assets/images/animation_assets/graph_green.png';
+import graph_orange from '../src/assets/images/animation_assets/graph_orange.png';
+import graph_yellow from '../src/assets/images/animation_assets/graph_yellow.png';
+import graph_blue from '../src/assets/images/animation_assets/graph_blue.png';
 import Cards from './Animations/Cards';
 
+gsap.registerPlugin(ScrollTrigger);
+
+const onEnter = ({ currentTarget }) => {
+    gsap.to(currentTarget, {
+        y: -20,
+        duration: 1,
+        ease: 'bounce.out'
+    });
+};
+
+const onLeave = ({ currentTarget }) => {
+    gsap.to(currentTarget, {
+        y: 0,
+        duration: 1,
+        ease: 'bounce.out'
+    });
+};
+
 function App() {
+    // Products
+    const product1 = useRef();
+    const product2 = useRef();
+    const product3 = useRef();
+    const product4 = useRef();
+    const product5 = useRef();
+    const product6 = useRef();
+    const product7 = useRef();
+    const product8 = useRef();
+
+    // store a reference to the box div
+    // const productCardList = useRef();
+    // const q = gsap.utils.selector(productCardList);
+
+    // wait until DOM has been rendered
+    useEffect(() => {
+        // Products card animation
+        gsap.from(product1.current, {
+            y: 100,
+            opacity: 0,
+            duration: 2,
+            ease: 'bounce.out',
+            scrollTrigger: {
+                trigger: product1.current
+            }
+        });
+        gsap.from(product2.current, {
+            y: 100,
+            opacity: 0,
+            duration: 2,
+            ease: 'bounce.out',
+            scrollTrigger: {
+                trigger: product2.current
+            }
+        });
+        gsap.from(product3.current, {
+            y: 100,
+            opacity: 0,
+            duration: 2,
+            ease: 'bounce.out',
+            scrollTrigger: {
+                trigger: product3.current
+            }
+        });
+        gsap.from(product4.current, {
+            y: 100,
+            opacity: 0,
+            duration: 2,
+            ease: 'bounce.out',
+            scrollTrigger: {
+                trigger: product4.current
+            }
+        });
+        gsap.from(product5.current, {
+            y: 100,
+            opacity: 0,
+            duration: 2,
+            ease: 'bounce.out',
+            scrollTrigger: {
+                trigger: product5.current
+            }
+        });
+        gsap.from(product6.current, {
+            y: 100,
+            opacity: 0,
+            duration: 2,
+            ease: 'bounce.out',
+            scrollTrigger: {
+                trigger: product6.current
+            }
+        });
+        gsap.from(product7.current, {
+            y: 100,
+            opacity: 0,
+            duration: 2,
+            ease: 'bounce.out',
+            scrollTrigger: {
+                trigger: product7.current
+            }
+        });
+        gsap.from(product8.current, {
+            y: 100,
+            opacity: 0,
+            duration: 2,
+            ease: 'bounce.out',
+            scrollTrigger: {
+                trigger: product8.current
+            }
+        });
+    });
+
     return (
         <>
             <section className="main-container">
@@ -83,7 +195,10 @@ function App() {
                             </div>
                         </div>
                         <div className="col-lg-6 col-md-12 order-1 order-lg-2 pb-3 text-white">
-                            <div className="banner-img mx-auto" style={{position: 'relative'}}>
+                            <div
+                                className="banner-img mx-auto"
+                                style={{ position: 'relative' }}
+                            >
                                 <Cards />
                                 {/* <img
                                     className="img-fluid"
@@ -109,7 +224,12 @@ function App() {
                         </p>
                     </div>
                     <div className="row flex-sm-none products">
-                        <div className="col-lg-3 col-md-4 col-sm-6 p-3">
+                        <div
+                            className="col-lg-3 col-md-4 col-sm-6 p-3"
+                            ref={product1}
+                            onMouseEnter={onEnter}
+                            onMouseLeave={onLeave}
+                        >
                             <ProductCard
                                 image={product_one}
                                 heading="Virtual sports"
@@ -118,7 +238,12 @@ function App() {
                             />
                         </div>
 
-                        <div className="col-lg-3 col-md-4 col-sm-6 p-3">
+                        <div
+                            className="col-lg-3 col-md-4 col-sm-6 p-3"
+                            ref={product2}
+                            onMouseEnter={onEnter}
+                            onMouseLeave={onLeave}
+                        >
                             <ProductCard
                                 image={product_two}
                                 heading="E-sports"
@@ -127,7 +252,12 @@ function App() {
                             />
                         </div>
 
-                        <div className="col-lg-3 col-md-4 col-sm-6 p-3">
+                        <div
+                            className="col-lg-3 col-md-4 col-sm-6 p-3"
+                            ref={product3}
+                            onMouseEnter={onEnter}
+                            onMouseLeave={onLeave}
+                        >
                             <ProductCard
                                 image={product_three}
                                 heading="Live Casino"
@@ -136,7 +266,12 @@ function App() {
                             />
                         </div>
 
-                        <div className="col-lg-3 col-md-4 col-sm-6 p-3">
+                        <div
+                            className="col-lg-3 col-md-4 col-sm-6 p-3"
+                            ref={product4}
+                            onMouseEnter={onEnter}
+                            onMouseLeave={onLeave}
+                        >
                             <ProductCard
                                 image={product_four}
                                 heading="Poker"
@@ -145,7 +280,12 @@ function App() {
                             />
                         </div>
 
-                        <div className="col-lg-3 col-md-4 col-sm-6 p-3">
+                        <div
+                            className="col-lg-3 col-md-4 col-sm-6 p-3"
+                            ref={product5}
+                            onMouseEnter={onEnter}
+                            onMouseLeave={onLeave}
+                        >
                             <ProductCard
                                 image={product_five}
                                 heading="Skill Games"
@@ -154,7 +294,12 @@ function App() {
                             />
                         </div>
 
-                        <div className="col-lg-3 col-md-4 col-sm-6 p-3">
+                        <div
+                            className="col-lg-3 col-md-4 col-sm-6 p-3"
+                            ref={product6}
+                            onMouseEnter={onEnter}
+                            onMouseLeave={onLeave}
+                        >
                             <ProductCard
                                 image={product_six}
                                 heading="Sportsbook"
@@ -163,7 +308,12 @@ function App() {
                             />
                         </div>
 
-                        <div className="col-lg-3 col-md-4 col-sm-6 p-3">
+                        <div
+                            className="col-lg-3 col-md-4 col-sm-6 p-3"
+                            ref={product7}
+                            onMouseEnter={onEnter}
+                            onMouseLeave={onLeave}
+                        >
                             <ProductCard
                                 image={product_seven}
                                 heading="Live Video Streaming"
@@ -172,7 +322,12 @@ function App() {
                             />
                         </div>
 
-                        <div className="col-lg-3 col-md-4 col-sm-6 align-items-center justify-content-center d-flex p-0 products last-product-block">
+                        <div
+                            className="col-lg-3 col-md-4 col-sm-6 align-items-center justify-content-center d-flex p-0 products last-product-block"
+                            ref={product8}
+                            onMouseEnter={onEnter}
+                            onMouseLeave={onLeave}
+                        >
                             <div className="game-quantity-block">
                                 Casino With <br />{' '}
                                 <span className="game-quantity">7500+</span>{' '}
@@ -205,20 +360,32 @@ function App() {
                                 /> */}
                                 <div className="graph1">
                                     <img className="person1" src={person1} />
-                                    <img className="graph-green" src={person1} />
+                                    <img
+                                        className="graph-green"
+                                        src={person1}
+                                    />
                                 </div>
                                 <div className="graph2">
                                     <img className="person1" src={person1} />
-                                    <img className="graph-green" src={person1} />
+                                    <img
+                                        className="graph-green"
+                                        src={person1}
+                                    />
                                 </div>
                                 <div className="graph3">
                                     <img className="person1" src={person1} />
-                                    <img className="graph-green" src={person1} />
+                                    <img
+                                        className="graph-green"
+                                        src={person1}
+                                    />
                                 </div>
                                 <div className="graph4">
                                     <img className="person1" src={person1} />
-                                    <img className="graph-green" src={person1} />
-                                </div>                                
+                                    <img
+                                        className="graph-green"
+                                        src={person1}
+                                    />
+                                </div>
                             </div>
                         </div>
                         <div className="col-md-6">
