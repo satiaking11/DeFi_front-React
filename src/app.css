@@ -1,0 +1,72 @@
+.dao-img {
+    width: 400px;
+    position: relative;
+}
+.dao-img-inner {
+    position: absolute;
+    top: 0;
+    /* display: none; */
+}
+.graph {
+    position: relative;
+}
+
+.graph3,
+.graph4 {
+    top: -80px;
+}
+.person1,
+.person2,
+.person3,
+.person4 {
+    position: absolute;
+    z-index: 1;
+}
+.person1 {
+    left: 50%;
+    top: 30%;
+    transform: translate(-50%, -50%);
+}
+.person2 {
+    left: 100%;
+    top: 30%;
+    transform: translate(-50%, -50%);
+}
+.person3 {
+    left: 50%;
+    bottom: 10%;
+    transform: translate(-50%, -50%);
+}
+.person4 {
+    left: 100%;
+    bottom: 10%;
+    transform: translate(-50%, -50%);
+}
+
+.dao-img .center-img {
+    position: absolute;
+    left: 62%;
+    top: 55%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+}
+
+.percent-num {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-weight: 900;
+    font-size: 80px;
+    opacity: 0;
+}
+
+.green-tick {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100px;
+    opacity: 0;
+}

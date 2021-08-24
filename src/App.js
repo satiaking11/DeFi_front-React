@@ -32,6 +32,7 @@ import CoinDetailBox from './Components/CoinDetailBox';
 import Button from './Atoms/Button';
 
 import perсent from '../src/assets/images/animation_assets/percent.png';
+import greenTick from '../src/assets/images/animation_assets/green_tick.svg';
 import person1 from '../src/assets/images/animation_assets/person_1.png';
 import person2 from '../src/assets/images/animation_assets/person_2.png';
 import person3 from '../src/assets/images/animation_assets/person_3.png';
@@ -41,6 +42,10 @@ import graph_orange from '../src/assets/images/animation_assets/graph_orange.png
 import graph_yellow from '../src/assets/images/animation_assets/graph_yellow.png';
 import graph_blue from '../src/assets/images/animation_assets/graph_blue.png';
 import Cards from './Animations/Cards';
+
+// Custom style
+
+import './app.css';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -150,6 +155,34 @@ function App() {
                 trigger: product8.current
             }
         });
+        //WITH Timelines (cleaner, more versatile)
+        var daoImg = gsap.timeline({
+            scrollTrigger: {
+                trigger: '.dao-img '
+            }
+        });
+        daoImg.from('.graph-green', { scale: 1.2, duration: 0.25 });
+        daoImg.to('.person1 ', { rotation: 15, duration: 0.25 });
+        daoImg.to('.person1 ', { rotation: 0, duration: 0.25 });
+        daoImg.to('.percent ', { opacity: 0, duration: 0.1 });
+        daoImg.to('.percent-25 ', { opacity: 1, duration: 0.1 });
+
+        daoImg.from('.graph-orange', { scale: 1.2, duration: 0.25 });
+        daoImg.to('.person2 ', { rotation: -15, duration: 0.25 });
+        daoImg.to('.person2 ', { rotation: 0, duration: 0.25 });
+        daoImg.to('.percent-25 ', { opacity: 0, duration: 0.1 });
+        daoImg.to('.percent-50 ', { opacity: 1, duration: 0.1 });
+        daoImg.from('.graph-yellow', { scale: 1.2, duration: 0.25 });
+        daoImg.to('.person4 ', { rotation: -15, duration: 0.25 });
+        daoImg.to('.person4 ', { rotation: 0, duration: 0.25 });
+        daoImg.to('.percent-50 ', { opacity: 0, duration: 0.1 });
+        daoImg.to('.percent-75 ', { opacity: 1, duration: 0.1 });
+        daoImg.from('.graph-blue', { scale: 1.2, duration: 0.1 });
+        daoImg.to('.person3 ', { rotation: 15, duration: 0.25 });
+        daoImg.to('.person3 ', { rotation: 0, duration: 0.25 });
+        daoImg.to('.percent-75 ', { opacity: 0, duration: 0.1 });
+
+        daoImg.to('.green-tick ', { opacity: 1, duration: 0.1 });
     });
 
     return (
@@ -352,39 +385,77 @@ function App() {
                 <div className="container">
                     <div className="row align-items-center">
                         <div className="col-md-6 d-flex justify-md-center">
-                            <div className="dao-img">
-                                {/* <img
-                                    className="img-fluid mt-2"
-                                    src={dao_img}
-                                    alt=""
-                                /> */}
-                                <div className="graph1">
-                                    <img className="person1" src={person1} />
+                            <div className="dao-img ">
+                                <div class="center-img">
                                     <img
-                                        className="graph-green"
-                                        src={person1}
+                                        className="percent"
+                                        src={perсent}
+                                        alt="..."
                                     />
+                                    <img
+                                        className="green-tick"
+                                        src={greenTick}
+                                        alt="..."
+                                    />
+                                    <h1 className="percent-num percent-25">
+                                        25%
+                                    </h1>
+                                    <h1 className="percent-num percent-50">
+                                        50%
+                                    </h1>
+                                    <h1 className="percent-num percent-75">
+                                        75%
+                                    </h1>
                                 </div>
-                                <div className="graph2">
-                                    <img className="person1" src={person1} />
-                                    <img
-                                        className="graph-green"
-                                        src={person1}
-                                    />
-                                </div>
-                                <div className="graph3">
-                                    <img className="person1" src={person1} />
-                                    <img
-                                        className="graph-green"
-                                        src={person1}
-                                    />
-                                </div>
-                                <div className="graph4">
-                                    <img className="person1" src={person1} />
-                                    <img
-                                        className="graph-green"
-                                        src={person1}
-                                    />
+                                <div className="dao-img-inner row row-cols-2">
+                                    <div className="graph graph1">
+                                        <img
+                                            className="person1"
+                                            src={person1}
+                                            alt="..."
+                                        />
+                                        <img
+                                            className="graph-green"
+                                            src={graph_green}
+                                            alt="..."
+                                        />
+                                    </div>
+                                    <div className="graph graph2">
+                                        <img
+                                            className="person2"
+                                            src={person2}
+                                            alt="..."
+                                        />
+                                        <img
+                                            className="graph-orange"
+                                            src={graph_orange}
+                                            alt="..."
+                                        />
+                                    </div>
+                                    <div className="graph graph3">
+                                        <img
+                                            className="person3"
+                                            src={person3}
+                                            alt="..."
+                                        />
+                                        <img
+                                            className="graph-blue"
+                                            src={graph_blue}
+                                            alt="..."
+                                        />
+                                    </div>
+                                    <div className="graph graph4">
+                                        <img
+                                            className="person4"
+                                            src={person4}
+                                            alt="..."
+                                        />
+                                        <img
+                                            className="graph-yellow"
+                                            src={graph_yellow}
+                                            alt="..."
+                                        />
+                                    </div>
                                 </div>
                             </div>
                         </div>
