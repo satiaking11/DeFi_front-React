@@ -198,7 +198,7 @@ function App() {
                             </h1>
                             <p className="body-text mt-4 mb-5">
                                 Become the house by holding the casino token in
-                                your wallet. $BNI is a reflection token backed
+                                your wallet. <br /> $BNI is a reflection token backed
                                 by the revenue of the leading crypto casino with
                                 auto rewards and auto claims.
                             </p>
