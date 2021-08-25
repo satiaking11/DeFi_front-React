@@ -10,11 +10,52 @@
 }
 
 .cardsBlock {
+    position: relative;
     width: 100%;
     height: 100%;
-    position: absolute;
+    left: 10%;
 }
 
+@media screen and (max-width: 1200px) {
+    .cardsBlock {
+        left: 23%;
+    }
+}
+@media screen and (max-width: 994px) {
+    .cardsBlock {
+        left: 11%;
+    }
+}
+@media screen and (max-width: 768px) {
+    .cardsBlock {
+        left: 6%;
+    }
+}
+@media screen and (max-width: 520px) {
+    .cardsBlock {
+        left: -1%;
+    }
+}
+@media screen and (max-width: 500px) {
+    .cardsBlock {
+        left: 6%;
+    }
+}
+@media screen and (max-width: 480px) {
+    .cardsBlock {
+        left: 6%;
+    }
+}
+@media screen and (max-width: 450px) {
+    .cardsBlock {
+        left: 3%;
+    }
+}
+@media screen and (max-width: 375px) {
+    .cardsBlock {
+        left: -1%;
+    }
+}
 .hand {
     /* top: 300px; */
     top: 260px;
@@ -46,6 +87,33 @@
     -ms-transform: rotate(-30deg);
     -o-transform: rotate(-30deg);
 }
+.CardsHand {
+    margin: auto;
+}
+@media screen and (max-width: 615px) {
+    .CardsHand {
+        transform: scale(0.8);
+        margin-top: 30px;
+        margin-right: 350px;
+    }
+}
+@media screen and (max-width: 500px) {
+    .CardsHand {
+        transform: scale(0.6);
+        margin-top: 50px;
+        margin-right: 350px;
+    }
+}
+@media screen and (max-width: 375px) {
+    .CardsHand {
+        transform: scale(0.5);
+        margin-top: 100px;
+        margin-right: 250px;
+    }
+    /* .coins__coin > img {
+        transform: scale(0.5);
+    } */
+}
 
 #card1,
 #card2,
@@ -63,6 +131,88 @@
     -ms-transform: rotate(-30deg);
     -o-transform: rotate(-30deg);
 }
+/* 
+.card-1-box {
+    z-index: 1;
+    display: none;
+}
+#card2 {
+    z-index: 10;
+}
+#card3 {
+    z-index: 11;
+}
+#card4 {
+    z-index: 12;
+}
+#card5 {
+    z-index: 13;
+}
+#card6 {
+    z-index: 14;
+}
+#card7 {
+    z-index: 15;
+}
+#card8 {
+    z-index: 16;
+} */
+@media screen and (max-width: 768px) {
+    /* #card1 {
+        top: 260px;
+        left: 80px;
+    }
+    #card2 {
+        top: 260px;
+        left: 70px;
+    }
+    #card3 {
+        top: 260px;
+        left: 60px;
+    }
+    #card4 {
+        top: 260px;
+        left: 50px;
+    }
+    #card5 {
+        top: 260px;
+        left: 40px;
+    }
+    #card6 {
+        top: 260px;
+        left: 30px;
+    }
+    #card7 {
+        top: 260px;
+        left: 20px;
+    }
+    #card8 {
+        top: 260px;
+        left: 0px;
+    } */
+}
+
+/* @media screen and (max-width: 385px) {
+    .cardsBlock {
+        margin-bottom: 100px !important;
+    }
+
+    .cardsBlock img {
+        top: 260px;
+        left: 0px;
+    }
+    #card1,
+    #card2,
+    #card3,
+    #card4,
+    #card5,
+    #card6,
+    #card7,
+    #card8 {
+        top: 260px;
+        left: -10px;
+    }
+} */
 
 /* #card2 {
     transform: rotate(-25deg);

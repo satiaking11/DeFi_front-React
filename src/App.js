@@ -161,23 +161,23 @@ function App() {
                 trigger: '.dao-img '
             }
         });
-        daoImg.from('.graph-green', { scale: 1.2, duration: 0.25 });
+        daoImg.from('.graph-green', { scale: 1.15, duration: 0.25 });
         daoImg.to('.person1 ', { rotation: 15, duration: 0.25 });
         daoImg.to('.person1 ', { rotation: 0, duration: 0.25 });
         daoImg.to('.percent ', { opacity: 0, duration: 0.1 });
         daoImg.to('.percent-25 ', { opacity: 1, duration: 0.1 });
 
-        daoImg.from('.graph-orange', { scale: 1.2, duration: 0.25 });
+        daoImg.from('.graph-orange', { scale: 1.15, duration: 0.25 });
         daoImg.to('.person2 ', { rotation: -15, duration: 0.25 });
         daoImg.to('.person2 ', { rotation: 0, duration: 0.25 });
         daoImg.to('.percent-25 ', { opacity: 0, duration: 0.1 });
         daoImg.to('.percent-50 ', { opacity: 1, duration: 0.1 });
-        daoImg.from('.graph-yellow', { scale: 1.2, duration: 0.25 });
+        daoImg.from('.graph-yellow', { scale: 1.15, duration: 0.25 });
         daoImg.to('.person4 ', { rotation: -15, duration: 0.25 });
         daoImg.to('.person4 ', { rotation: 0, duration: 0.25 });
         daoImg.to('.percent-50 ', { opacity: 0, duration: 0.1 });
         daoImg.to('.percent-75 ', { opacity: 1, duration: 0.1 });
-        daoImg.from('.graph-blue', { scale: 1.2, duration: 0.1 });
+        daoImg.from('.graph-blue', { scale: 1.15, duration: 0.1 });
         daoImg.to('.person3 ', { rotation: 15, duration: 0.25 });
         daoImg.to('.person3 ', { rotation: 0, duration: 0.25 });
         daoImg.to('.percent-75 ', { opacity: 0, duration: 0.1 });
@@ -191,10 +191,10 @@ function App() {
                 <Header />
 
                 <div className="container mt-3">
-                    <div className="row banner align-items-center">
-                        <div className="col-lg-6 col-md-12 order-2 order-lg-1 text-white p-0 mt-3">
-                            <h1 className="banner-heading text-uppercase mb-3">
-                                Join the house, <br /> get paid in $BNB
+                    <div className="row row-cols-xl-2 banner align-items-center">
+                        <div className=" hero-text order-2 order-xl-1 text-white p-0 mt-xl-3">
+                            <h1 className="banner-heading text-uppercase mb-3 text-nowrap">
+                                JOIN THE HOUSE, <br /> GET PAID IN $BNB
                             </h1>
                             <p className="body-text mt-4 mb-5">
                                 Become the house by holding the casino token in
@@ -227,12 +227,13 @@ function App() {
                                 />
                             </div>
                         </div>
-                        <div className="col-lg-6 col-md-12 order-1 order-lg-2 pb-3 text-white">
+                        <div className=" order-1 order-xl-2 pb-3 text-white">
                             <div
-                                className="banner-img mx-auto"
-                                style={{ position: 'relative' }}
+                                className="banner-img mx-auto overflow-hidded"
+                                style={{ position: 'relative', width: '100%' }}
                             >
                                 <Cards />
+
                                 {/* <img
                                     className="img-fluid"
                                     src={banner_img}
@@ -383,9 +384,9 @@ function App() {
 
             <div className="dao-section">
                 <div className="container">
-                    <div className="row align-items-center">
-                        <div className="col-md-6 d-flex justify-md-center">
-                            <div className="dao-img ">
+                    <div className="row row-cols-lg-2 align-items-center">
+                        <div className=" d-flex justify-md-center">
+                            <div className="dao-img  m-auto m-lg-0">
                                 <div class="center-img">
                                     <img
                                         className="percent"
@@ -459,7 +460,7 @@ function App() {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-md-6">
+                        <div className=" mt-5 mt-lg-0">
                             <div className="dao-heading">Betnomi DAO </div>
                             <p className="body-text text-white mt-3 dao-text">
                                 Token holders effectively act as the house where

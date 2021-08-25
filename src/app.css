@@ -1,7 +1,54 @@
+.main-container {
+    width: 100%;
+    overflow: hidden;
+}
+
+.hero-text {
+    margin-top: clamp(100px, 30vw, 170px);
+    z-index: 1;
+}
+
+@media screen and (max-width: 500px) {
+    .hero-text {
+        margin-top: clamp(80px, 10vw, 150px);
+        z-index: 1;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .hero-text {
+        margin-top: clamp(150px, 30vw, 200px);
+        z-index: 1;
+    }
+}
+
+.dao-section {
+    width: 100%;
+    overflow: hidden;
+}
+
 .dao-img {
     width: 400px;
     position: relative;
+    min-height: 540px;
 }
+@media screen and (max-width: 994px) {
+    .dao-img {
+        min-height: 350px;
+        transform: translate(-12%);
+    }
+}
+@media screen and (max-width: 768px) {
+    .dao-img {
+        transform: translate(-14%);
+    }
+}
+@media screen and (max-width: 450px) {
+    .dao-img {
+        transform: translate(-16%);
+    }
+}
+
 .dao-img-inner {
     position: absolute;
     top: 0;
@@ -21,6 +68,39 @@
 .person4 {
     position: absolute;
     z-index: 1;
+}
+
+@media screen and (max-width: 768px) {
+    .dao-img .graph img {
+        width: 240px;
+    }
+    .dao-img .graph .person1,
+    .dao-img .graph .person2,
+    .dao-img .graph .person3,
+    .dao-img .graph .person4 {
+        width: 75px;
+    }
+}
+@media screen and (max-width: 375px) {
+    .dao-img .graph img {
+        width: 200px;
+    }
+    .dao-img .graph .person1,
+    .dao-img .graph .person2,
+    .dao-img .graph .person3,
+    .dao-img .graph .person4 {
+        width: 60px;
+    }
+    .graph3,
+    .graph4 {
+        top: -55px;
+    }
+}
+@media screen and (max-width: 340px) {
+    .graph3,
+    .graph4 {
+        top: -75px;
+    }
 }
 .person1 {
     left: 50%;
@@ -46,11 +126,30 @@
 .dao-img .center-img {
     position: absolute;
     left: 62%;
-    top: 55%;
+    top: 42%;
     transform: translate(-50%, -50%);
     z-index: 10;
 }
 
+@media screen and (max-width: 994px) {
+    .dao-img .center-img {
+        left: 62%;
+        top: 56%;
+    }
+}
+@media screen and (max-width: 768px) {
+    .dao-img .center-img {
+        left: 67%;
+        top: 54%;
+    }
+}
+@media screen and (max-width: 375px) {
+    .dao-img .center-img {
+        left: 63%;
+        top: 47%;
+        margin-left: clamp(2px, 2.8vw, 20px);
+    }
+}
 .percent-num {
     position: absolute;
     top: 50%;
@@ -61,6 +160,11 @@
     font-size: 80px;
     opacity: 0;
 }
+@media screen and (max-width: 450px) {
+    .percent-num {
+        font-size: 55px;
+    }
+}
 
 .green-tick {
     position: absolute;
@@ -69,4 +173,10 @@
     transform: translate(-50%, -50%);
     width: 100px;
     opacity: 0;
+}
+
+@media screen and (max-width: 450px) {
+    .green-tick {
+        width: 80px;
+    }
 }

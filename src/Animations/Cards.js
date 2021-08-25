@@ -22,7 +22,9 @@ const Cards = () => {
     useEffect(() => {
         setTimeout(() => {
             gsap.to(q(`.${classes.hand}`), {
-                duration: 0.5,
+                duration: 0.7,
+                repeat: -1,
+                repeatDelay: 2,
                 // left: 200,
                 rotate: 36,
                 motionPath: [
@@ -36,21 +38,33 @@ const Cards = () => {
                 ],
                 onUpdate: () => {
                     const pos = parseInt(q(`.${classes.hand}`)[0].style.left);
-                    // const posTop = parseInt(q(`.${classes.hand}`)[0].style.top);
-                    // const posTop = parseInt(q(`.${classes.hand}`)[0].style.top);
-                    // const card = document.getElementById(`${classes.card8}`)
-                    // card.style.left = `${pos}px`;
-                    // card.style.top = `${posTop}px`;
-                    // card.style.transform = 'rotate(36deg)';
+
                     setPositionCard(pos);
+
+                    setTimeout(() => {
+                        showKing();
+                    }, 700);
                 },
-                onComplete: () => showKing()
+
+                onRepeat: () => {
+                    const pos = parseInt(q(`.${classes.hand}`)[0].style.left);
+
+                    reSetPositionCard();
+
+                    setPositionCard(pos);
+
+                    setTimeout(() => {
+                        showKing();
+                    }, 700);
+                }
             });
         }, 1000);
 
         setTimeout(() => {
             gsap.to(q(`#${classes.card8}`), {
-                duration: 0.5,
+                duration: 0.7,
+                repeat: -1,
+                repeatDelay: 2,
                 // left: 200,
                 rotate: 36,
                 motionPath: [
@@ -64,33 +78,191 @@ const Cards = () => {
                 ]
             });
 
-            // coins
+            // Coin Animation
 
-            gsap.to(`.eth`, {
-                duration: 0.4,
-                x: 500,
-                y: -110
-            });
-            gsap.to(`.eth-1`, {
-                duration: 0.3,
-                x: 50,
-                y: -110
-            });
-            gsap.to(`.eth-2`, {
-                duration: 0.4,
-                x: -130,
-                y: -130
-            });
-            gsap.to(`.eth-3`, {
-                duration: 0.4,
-                x: -40,
-                y: -240
-            });
-            gsap.to(`.eth-4`, {
-                duration: 0.4,
-                x: 300,
-                y: -230
-            });
+            if (window.innerWidth > 750) {
+                // coins
+
+                gsap.to(`.eth`, {
+                    repeat: -1,
+                    repeatDelay: 2,
+                    duration: 0.7,
+                    x: 460,
+                    y: -90
+                });
+                gsap.to(`.eth-1`, {
+                    repeat: -1,
+                    repeatDelay: 2,
+                    duration: 0.7,
+                    x: 50,
+                    y: -110
+                });
+                gsap.to(`.eth-2`, {
+                    repeat: -1,
+                    repeatDelay: 2,
+                    duration: 0.7,
+                    x: -130,
+                    y: -130
+                });
+                gsap.to(`.eth-3`, {
+                    repeat: -1,
+                    repeatDelay: 2,
+                    duration: 0.7,
+                    x: -40,
+                    y: -240
+                });
+                gsap.to(`.eth-4`, {
+                    repeat: -1,
+                    repeatDelay: 2,
+                    duration: 0.7,
+                    x: 300,
+                    y: -230
+                });
+            } else if (window.innerWidth > 540) {
+                gsap.to(`.eth`, {
+                    repeat: -1,
+                    repeatDelay: 2,
+                    duration: 0.7,
+                    x: 380,
+                    y: -90
+                });
+                gsap.to(`.eth-1`, {
+                    repeat: -1,
+                    repeatDelay: 2,
+                    duration: 0.7,
+                    x: 50,
+                    y: -110
+                });
+                gsap.to(`.eth-2`, {
+                    repeat: -1,
+                    repeatDelay: 2,
+                    duration: 0.7,
+                    x: -60,
+                    y: -100
+                });
+                gsap.to(`.eth-3`, {
+                    repeat: -1,
+                    repeatDelay: 2,
+                    duration: 0.7,
+                    x: -40,
+                    y: -240
+                });
+                gsap.to(`.eth-4`, {
+                    repeat: -1,
+                    repeatDelay: 2,
+                    duration: 0.7,
+                    x: 300,
+                    y: -230
+                });
+            } else if (window.innerWidth > 500) {
+                gsap.to(`.eth`, {
+                    repeat: -1,
+                    repeatDelay: 2,
+                    duration: 0.7,
+                    x: 350,
+                    y: -120
+                });
+                gsap.to(`.eth-1`, {
+                    repeat: -1,
+                    repeatDelay: 2,
+                    duration: 0.7,
+                    x: 50,
+                    y: -110
+                });
+                gsap.to(`.eth-2`, {
+                    repeat: -1,
+                    repeatDelay: 2,
+                    duration: 0.7,
+                    x: -40,
+                    y: -90
+                });
+                gsap.to(`.eth-3`, {
+                    repeat: -1,
+                    repeatDelay: 2,
+                    duration: 0.7,
+                    x: -40,
+                    y: -240
+                });
+                gsap.to(`.eth-4`, {
+                    repeat: -1,
+                    repeatDelay: 2,
+                    duration: 0.7,
+                    x: 300,
+                    y: -230
+                });
+            } else if (window.innerWidth > 375) {
+                gsap.to(`.eth`, {
+                    repeat: -1,
+                    repeatDelay: 2,
+                    duration: 0.7,
+                    x: 290,
+                    y: -120
+                });
+                gsap.to(`.eth-1`, {
+                    repeat: -1,
+                    repeatDelay: 2,
+                    duration: 0.7,
+                    x: 50,
+                    y: -140
+                });
+                gsap.to(`.eth-2`, {
+                    repeat: -1,
+                    repeatDelay: 2,
+                    duration: 0.7,
+                    x: -40,
+                    y: -100
+                });
+                gsap.to(`.eth-3`, {
+                    repeat: -1,
+                    repeatDelay: 2,
+                    duration: 0.7,
+                    x: -10,
+                    y: -240
+                });
+                gsap.to(`.eth-4`, {
+                    repeat: -1,
+                    repeatDelay: 2,
+                    duration: 0.7,
+                    x: 250,
+                    y: -230
+                });
+            } else {
+                gsap.to(`.eth`, {
+                    repeat: -1,
+                    repeatDelay: 2,
+                    duration: 0.7,
+                    x: 220,
+                    y: -120
+                });
+                gsap.to(`.eth-1`, {
+                    repeat: -1,
+                    repeatDelay: 2,
+                    duration: 0.7,
+                    x: 50,
+                    y: -140
+                });
+                gsap.to(`.eth-2`, {
+                    repeat: -1,
+                    repeatDelay: 2,
+                    duration: 0.7,
+                    x: -40,
+                    y: -100
+                });
+                gsap.to(`.eth-3`, {
+                    repeat: -1,
+                    repeatDelay: 2,
+                    duration: 0.7,
+                    x: -10,
+                    y: -240
+                });
+                gsap.to(`.eth-4`, {
+                    repeat: -1,
+                    repeatDelay: 2,
+                    duration: 0.7,
+                    x: 170,
+                    y: -230
+                });
+            }
         }, 1000);
     }, []);
 
@@ -128,11 +300,57 @@ const Cards = () => {
             card.style.zIndex = '11';
         } else if (pos > 45) {
             const card = document.getElementById(`${classes.card2}`);
+            // const card1 = document.getElementById(`${classes.card1}`);
+            // card1.style.zIndex = '9';
             card.style.left = '75px';
             card.style.top = '230px';
             card.style.transform = 'rotate(-25deg)';
             card.style.zIndex = '10';
         }
+    }
+
+    function reSetPositionCard() {
+        //===========
+        const card7 = document.getElementById(`${classes.card7}`);
+        card7.style.left = '30px';
+        card7.style.top = '260px';
+        card7.style.transform = 'rotate(-30deg)';
+        card7.style.zIndex = '1';
+
+        //===========
+        const card6 = document.getElementById(`${classes.card6}`);
+        card6.style.left = '30px';
+        card6.style.top = '260px';
+        card6.style.transform = 'rotate(-30deg)';
+        card6.style.zIndex = '1';
+
+        //===========
+        const card5 = document.getElementById(`${classes.card5}`);
+        card5.style.left = '30px';
+        card5.style.top = '260px';
+        card5.style.transform = 'rotate(-30deg)';
+        card5.style.zIndex = '1';
+
+        //===========
+        const card4 = document.getElementById(`${classes.card4}`);
+        card4.style.left = '30px';
+        card4.style.top = '260px';
+        card4.style.transform = 'rotate(-30deg)';
+        card4.style.zIndex = '1';
+
+        //===========
+        const card3 = document.getElementById(`${classes.card3}`);
+        card3.style.left = '30px';
+        card3.style.top = '260px';
+        card3.style.transform = 'rotate(-30deg)';
+        card3.style.zIndex = '1';
+
+        //===========
+        const card2 = document.getElementById(`${classes.card2}`);
+        card2.style.left = '30px';
+        card2.style.top = '260px';
+        card2.style.transform = 'rotate(-30deg)';
+        card2.style.zIndex = '1';
     }
 
     function showKing() {
@@ -161,13 +379,15 @@ const Cards = () => {
                     <img src={ETH4} alt="eth 4" />
                 </div>
             </div>
-            <div>
-                <img
-                    id={classes.card1}
-                    className={classes.cards}
-                    src={card}
-                    alt="card1"
-                />
+            <div className={classes.CardsHand}>
+                <div className="card-1-box">
+                    <img
+                        id={classes.card1}
+                        className={classes.cards}
+                        src={card}
+                        alt="card1"
+                    />
+                </div>
                 <img
                     id={classes.card2}
                     className={classes.cards}
