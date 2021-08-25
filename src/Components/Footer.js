@@ -13,7 +13,7 @@ const Footer = () => {
             <div className="solid-bottom-border">
                 <div className="container">
                     <div className="social-imgs-block">
-                        <a href="/">
+                        <a href="https://t.me/betnomi">
                             <div className="social-img">
                                 <img
                                     className="img-fluid"
@@ -23,27 +23,16 @@ const Footer = () => {
                             </div>
                         </a>
 
-                        <a href="/">
+                        <a href="https://twitter.com/betnomi1">
                             <div className="social-img">
                                 <img
                                     className="img-fluid"
-                                    src={social_img_2}
-                                    alt="Reddit"
+                                    src={social_img_5}
+                                    alt="Twitter"
                                 />
                             </div>
                         </a>
-
-                        <a href="/">
-                            <div className="social-img">
-                                <img
-                                    className="img-fluid"
-                                    src={social_img_3}
-                                    alt="Medium"
-                                />
-                            </div>
-                        </a>
-
-                        <a href="/">
+                        <a href="https://discord.gg/JMQQHtkX">
                             <div className="social-img">
                                 <img
                                     className="img-fluid"
@@ -53,12 +42,22 @@ const Footer = () => {
                             </div>
                         </a>
 
-                        <a href="/">
+                        <a href="https://betnomi.medium.com">
                             <div className="social-img">
                                 <img
                                     className="img-fluid"
-                                    src={social_img_5}
-                                    alt="Twitter"
+                                    src={social_img_3}
+                                    alt="Medium"
+                                />
+                            </div>
+                        </a>
+
+                        <a href="https://www.reddit.com/r/Betnomi1">
+                            <div className="social-img">
+                                <img
+                                    className="img-fluid"
+                                    src={social_img_2}
+                                    alt="Reddit"
                                 />
                             </div>
                         </a>

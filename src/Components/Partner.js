@@ -27,85 +27,31 @@ const Partners = (props) => {
             <div className="col-md-none">
                 <div className="partner-imgs-block">
                     <div className="partner-img">
-                        <a href="/">
-                            <img
-                                className="img-fluid"
-                                src={partner_img_1}
-                                alt=""
-                            />
-                        </a>
+                        <img className="img-fluid" src={partner_img_1} alt="" />
                     </div>
                     <div className="partner-img">
-                        <a href="/">
-                            <img
-                                className="img-fluid"
-                                src={partner_img_2}
-                                alt=""
-                            />
-                        </a>
+                        <img className="img-fluid" src={partner_img_2} alt="" />
                     </div>
                     <div className="partner-img">
-                        <a href="/">
-                            <img
-                                className="img-fluid"
-                                src={partner_img_3}
-                                alt=""
-                            />
-                        </a>
+                        <img className="img-fluid" src={partner_img_3} alt="" />
                     </div>
                     <div className="partner-img">
-                        <a href="/">
-                            <img
-                                className="img-fluid"
-                                src={partner_img_4}
-                                alt=""
-                            />
-                        </a>
+                        <img className="img-fluid" src={partner_img_4} alt="" />
                     </div>
                     <div className="partner-img">
-                        <a href="/">
-                            <img
-                                className="img-fluid"
-                                src={partner_img_5}
-                                alt=""
-                            />
-                        </a>
+                        <img className="img-fluid" src={partner_img_5} alt="" />
                     </div>
                     <div className="partner-img">
-                        <a href="/">
-                            <img
-                                className="img-fluid"
-                                src={partner_img_6}
-                                alt=""
-                            />
-                        </a>
+                        <img className="img-fluid" src={partner_img_6} alt="" />
                     </div>
                     <div className="partner-img">
-                        <a href="/">
-                            <img
-                                className="img-fluid"
-                                src={partner_img_7}
-                                alt=""
-                            />
-                        </a>
+                        <img className="img-fluid" src={partner_img_7} alt="" />
                     </div>
                     <div className="partner-img">
-                        <a href="/">
-                            <img
-                                className="img-fluid"
-                                src={partner_img_8}
-                                alt=""
-                            />
-                        </a>
+                        <img className="img-fluid" src={partner_img_8} alt="" />
                     </div>
                     <div className="partner-img">
-                        <a href="/">
-                            <img
-                                className="img-fluid"
-                                src={partner_img_9}
-                                alt=""
-                            />
-                        </a>
+                        <img className="img-fluid" src={partner_img_9} alt="" />
                     </div>
                 </div>
             </div>

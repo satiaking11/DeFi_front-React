@@ -1,4 +1,7 @@
-import React from 'react';
+import React, { useRef, useEffect } from 'react';
+// Gsap
+import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import banner_img from '../src/assets/images/image.png';
 import play_icon from '../src/assets/images/play.svg';
 import launch_icon from '../src/assets/images/launch.svg';
@@ -28,32 +31,174 @@ import ReportMobileCarousel from './Components/ReportCarouselMobile';
 import CoinDetailBox from './Components/CoinDetailBox';
 import Button from './Atoms/Button';
 
-import perсent from '../src/assets/images/animation_assets/percent.png'
-import person1 from '../src/assets/images/animation_assets/person_1.png'
-import person2 from '../src/assets/images/animation_assets/person_2.png'
-import person3 from '../src/assets/images/animation_assets/person_3.png'
-import person4 from '../src/assets/images/animation_assets/person_4.png'
-import graph_green from '../src/assets/images/animation_assets/graph_green.png'
-import graph_orange from '../src/assets/images/animation_assets/graph_orange.png'
-import graph_yellow from '../src/assets/images/animation_assets/graph_yellow.png'
-import graph_blue from '../src/assets/images/animation_assets/graph_blue.png'
+import perсent from '../src/assets/images/animation_assets/percent.png';
+import greenTick from '../src/assets/images/animation_assets/green_tick.svg';
+import person1 from '../src/assets/images/animation_assets/person_1.png';
+import person2 from '../src/assets/images/animation_assets/person_2.png';
+import person3 from '../src/assets/images/animation_assets/person_3.png';
+import person4 from '../src/assets/images/animation_assets/person_4.png';
+import graph_green from '../src/assets/images/animation_assets/graph_green.png';
+import graph_orange from '../src/assets/images/animation_assets/graph_orange.png';
+import graph_yellow from '../src/assets/images/animation_assets/graph_yellow.png';
+import graph_blue from '../src/assets/images/animation_assets/graph_blue.png';
 import Cards from './Animations/Cards';
 
+// Custom style
+
+import './app.css';
+
+gsap.registerPlugin(ScrollTrigger);
+
+const onEnter = ({ currentTarget }) => {
+    gsap.to(currentTarget, {
+        y: -20,
+        duration: 1,
+        ease: 'bounce.out'
+    });
+};
+
+const onLeave = ({ currentTarget }) => {
+    gsap.to(currentTarget, {
+        y: 0,
+        duration: 1,
+        ease: 'bounce.out'
+    });
+};
+
 function App() {
+    // Products
+    const product1 = useRef();
+    const product2 = useRef();
+    const product3 = useRef();
+    const product4 = useRef();
+    const product5 = useRef();
+    const product6 = useRef();
+    const product7 = useRef();
+    const product8 = useRef();
+
+    // store a reference to the box div
+    // const productCardList = useRef();
+    // const q = gsap.utils.selector(productCardList);
+
+    // wait until DOM has been rendered
+    useEffect(() => {
+        // Products card animation
+        gsap.from(product1.current, {
+            y: 100,
+            opacity: 0,
+            duration: 2,
+            ease: 'bounce.out',
+            scrollTrigger: {
+                trigger: product1.current
+            }
+        });
+        gsap.from(product2.current, {
+            y: 100,
+            opacity: 0,
+            duration: 2,
+            ease: 'bounce.out',
+            scrollTrigger: {
+                trigger: product2.current
+            }
+        });
+        gsap.from(product3.current, {
+            y: 100,
+            opacity: 0,
+            duration: 2,
+            ease: 'bounce.out',
+            scrollTrigger: {
+                trigger: product3.current
+            }
+        });
+        gsap.from(product4.current, {
+            y: 100,
+            opacity: 0,
+            duration: 2,
+            ease: 'bounce.out',
+            scrollTrigger: {
+                trigger: product4.current
+            }
+        });
+        gsap.from(product5.current, {
+            y: 100,
+            opacity: 0,
+            duration: 2,
+            ease: 'bounce.out',
+            scrollTrigger: {
+                trigger: product5.current
+            }
+        });
+        gsap.from(product6.current, {
+            y: 100,
+            opacity: 0,
+            duration: 2,
+            ease: 'bounce.out',
+            scrollTrigger: {
+                trigger: product6.current
+            }
+        });
+        gsap.from(product7.current, {
+            y: 100,
+            opacity: 0,
+            duration: 2,
+            ease: 'bounce.out',
+            scrollTrigger: {
+                trigger: product7.current
+            }
+        });
+        gsap.from(product8.current, {
+            y: 100,
+            opacity: 0,
+            duration: 2,
+            ease: 'bounce.out',
+            scrollTrigger: {
+                trigger: product8.current
+            }
+        });
+        //WITH Timelines (cleaner, more versatile)
+        var daoImg = gsap.timeline({
+            scrollTrigger: {
+                trigger: '.dao-img '
+            }
+        });
+        daoImg.from('.graph-green', { scale: 1.15, duration: 0.25 });
+        daoImg.to('.person1 ', { rotation: 15, duration: 0.25 });
+        daoImg.to('.person1 ', { rotation: 0, duration: 0.25 });
+        daoImg.to('.percent ', { opacity: 0, duration: 0.1 });
+        daoImg.to('.percent-25 ', { opacity: 1, duration: 0.1 });
+
+        daoImg.from('.graph-orange', { scale: 1.15, duration: 0.25 });
+        daoImg.to('.person2 ', { rotation: -15, duration: 0.25 });
+        daoImg.to('.person2 ', { rotation: 0, duration: 0.25 });
+        daoImg.to('.percent-25 ', { opacity: 0, duration: 0.1 });
+        daoImg.to('.percent-50 ', { opacity: 1, duration: 0.1 });
+        daoImg.from('.graph-yellow', { scale: 1.15, duration: 0.25 });
+        daoImg.to('.person4 ', { rotation: -15, duration: 0.25 });
+        daoImg.to('.person4 ', { rotation: 0, duration: 0.25 });
+        daoImg.to('.percent-50 ', { opacity: 0, duration: 0.1 });
+        daoImg.to('.percent-75 ', { opacity: 1, duration: 0.1 });
+        daoImg.from('.graph-blue', { scale: 1.15, duration: 0.1 });
+        daoImg.to('.person3 ', { rotation: 15, duration: 0.25 });
+        daoImg.to('.person3 ', { rotation: 0, duration: 0.25 });
+        daoImg.to('.percent-75 ', { opacity: 0, duration: 0.1 });
+
+        daoImg.to('.green-tick ', { opacity: 1, duration: 0.1 });
+    });
+
     return (
         <>
             <section className="main-container">
                 <Header />
 
                 <div className="container mt-3">
-                    <div className="row banner align-items-center">
-                        <div className="col-lg-6 col-md-12 order-2 order-lg-1 text-white p-0 mt-3">
-                            <h1 className="banner-heading text-uppercase mb-3">
-                                Join the house, <br /> get paid in $BNB
+                    <div className="row row-cols-xl-2 banner align-items-center">
+                        <div className=" hero-text order-2 order-xl-1 text-white p-0 mt-xl-3">
+                            <h1 className="banner-heading text-uppercase mb-3 text-nowrap">
+                                JOIN THE HOUSE, <br /> GET PAID IN $BNB
                             </h1>
                             <p className="body-text mt-4 mb-5">
                                 Become the house by holding the casino token in
-                                your wallet. $BNI is a reflection token backed
+                                your wallet. <br /> $BNI is a reflection token backed
                                 by the revenue of the leading crypto casino with
                                 auto rewards and auto claims.
                             </p>
@@ -82,9 +227,13 @@ function App() {
                                 />
                             </div>
                         </div>
-                        <div className="col-lg-6 col-md-12 order-1 order-lg-2 pb-3 text-white">
-                            <div className="banner-img mx-auto" style={{position: 'relative'}}>
+                        <div className=" order-1 order-xl-2 pb-3 text-white">
+                            <div
+                                className="banner-img mx-auto overflow-hidded"
+                                style={{ position: 'relative', width: '100%' }}
+                            >
                                 <Cards />
+
                                 {/* <img
                                     className="img-fluid"
                                     src={banner_img}
@@ -109,7 +258,12 @@ function App() {
                         </p>
                     </div>
                     <div className="row flex-sm-none products">
-                        <div className="col-lg-3 col-md-4 col-sm-6 p-3">
+                        <div
+                            className="col-lg-3 col-md-4 col-sm-6 p-3"
+                            ref={product1}
+                            onMouseEnter={onEnter}
+                            onMouseLeave={onLeave}
+                        >
                             <ProductCard
                                 image={product_one}
                                 heading="Virtual sports"
@@ -118,7 +272,12 @@ function App() {
                             />
                         </div>
 
-                        <div className="col-lg-3 col-md-4 col-sm-6 p-3">
+                        <div
+                            className="col-lg-3 col-md-4 col-sm-6 p-3"
+                            ref={product2}
+                            onMouseEnter={onEnter}
+                            onMouseLeave={onLeave}
+                        >
                             <ProductCard
                                 image={product_two}
                                 heading="E-sports"
@@ -127,7 +286,12 @@ function App() {
                             />
                         </div>
 
-                        <div className="col-lg-3 col-md-4 col-sm-6 p-3">
+                        <div
+                            className="col-lg-3 col-md-4 col-sm-6 p-3"
+                            ref={product3}
+                            onMouseEnter={onEnter}
+                            onMouseLeave={onLeave}
+                        >
                             <ProductCard
                                 image={product_three}
                                 heading="Live Casino"
@@ -136,7 +300,12 @@ function App() {
                             />
                         </div>
 
-                        <div className="col-lg-3 col-md-4 col-sm-6 p-3">
+                        <div
+                            className="col-lg-3 col-md-4 col-sm-6 p-3"
+                            ref={product4}
+                            onMouseEnter={onEnter}
+                            onMouseLeave={onLeave}
+                        >
                             <ProductCard
                                 image={product_four}
                                 heading="Poker"
@@ -145,7 +314,12 @@ function App() {
                             />
                         </div>
 
-                        <div className="col-lg-3 col-md-4 col-sm-6 p-3">
+                        <div
+                            className="col-lg-3 col-md-4 col-sm-6 p-3"
+                            ref={product5}
+                            onMouseEnter={onEnter}
+                            onMouseLeave={onLeave}
+                        >
                             <ProductCard
                                 image={product_five}
                                 heading="Skill Games"
@@ -154,7 +328,12 @@ function App() {
                             />
                         </div>
 
-                        <div className="col-lg-3 col-md-4 col-sm-6 p-3">
+                        <div
+                            className="col-lg-3 col-md-4 col-sm-6 p-3"
+                            ref={product6}
+                            onMouseEnter={onEnter}
+                            onMouseLeave={onLeave}
+                        >
                             <ProductCard
                                 image={product_six}
                                 heading="Sportsbook"
@@ -163,7 +342,12 @@ function App() {
                             />
                         </div>
 
-                        <div className="col-lg-3 col-md-4 col-sm-6 p-3">
+                        <div
+                            className="col-lg-3 col-md-4 col-sm-6 p-3"
+                            ref={product7}
+                            onMouseEnter={onEnter}
+                            onMouseLeave={onLeave}
+                        >
                             <ProductCard
                                 image={product_seven}
                                 heading="Live Video Streaming"
@@ -172,7 +356,12 @@ function App() {
                             />
                         </div>
 
-                        <div className="col-lg-3 col-md-4 col-sm-6 align-items-center justify-content-center d-flex p-0 products last-product-block">
+                        <div
+                            className="col-lg-3 col-md-4 col-sm-6 align-items-center justify-content-center d-flex p-0 products last-product-block"
+                            ref={product8}
+                            onMouseEnter={onEnter}
+                            onMouseLeave={onLeave}
+                        >
                             <div className="game-quantity-block">
                                 Casino With <br />{' '}
                                 <span className="game-quantity">7500+</span>{' '}
@@ -195,33 +384,83 @@ function App() {
 
             <div className="dao-section">
                 <div className="container">
-                    <div className="row align-items-center">
-                        <div className="col-md-6 d-flex justify-md-center">
-                            <div className="dao-img">
-                                {/* <img
-                                    className="img-fluid mt-2"
-                                    src={dao_img}
-                                    alt=""
-                                /> */}
-                                <div className="graph1">
-                                    <img className="person1" src={person1} />
-                                    <img className="graph-green" src={person1} />
+                    <div className="row row-cols-lg-2 align-items-center">
+                        <div className=" d-flex justify-md-center">
+                            <div className="dao-img  m-auto m-lg-0">
+                                <div class="center-img">
+                                    <img
+                                        className="percent"
+                                        src={perсent}
+                                        alt="..."
+                                    />
+                                    <img
+                                        className="green-tick"
+                                        src={greenTick}
+                                        alt="..."
+                                    />
+                                    <h1 className="percent-num percent-25">
+                                        25%
+                                    </h1>
+                                    <h1 className="percent-num percent-50">
+                                        50%
+                                    </h1>
+                                    <h1 className="percent-num percent-75">
+                                        75%
+                                    </h1>
                                 </div>
-                                <div className="graph2">
-                                    <img className="person1" src={person1} />
-                                    <img className="graph-green" src={person1} />
+                                <div className="dao-img-inner row row-cols-2">
+                                    <div className="graph graph1">
+                                        <img
+                                            className="person1"
+                                            src={person1}
+                                            alt="..."
+                                        />
+                                        <img
+                                            className="graph-green"
+                                            src={graph_green}
+                                            alt="..."
+                                        />
+                                    </div>
+                                    <div className="graph graph2">
+                                        <img
+                                            className="person2"
+                                            src={person2}
+                                            alt="..."
+                                        />
+                                        <img
+                                            className="graph-orange"
+                                            src={graph_orange}
+                                            alt="..."
+                                        />
+                                    </div>
+                                    <div className="graph graph3">
+                                        <img
+                                            className="person3"
+                                            src={person3}
+                                            alt="..."
+                                        />
+                                        <img
+                                            className="graph-blue"
+                                            src={graph_blue}
+                                            alt="..."
+                                        />
+                                    </div>
+                                    <div className="graph graph4">
+                                        <img
+                                            className="person4"
+                                            src={person4}
+                                            alt="..."
+                                        />
+                                        <img
+                                            className="graph-yellow"
+                                            src={graph_yellow}
+                                            alt="..."
+                                        />
+                                    </div>
                                 </div>
-                                <div className="graph3">
-                                    <img className="person1" src={person1} />
-                                    <img className="graph-green" src={person1} />
-                                </div>
-                                <div className="graph4">
-                                    <img className="person1" src={person1} />
-                                    <img className="graph-green" src={person1} />
-                                </div>                                
                             </div>
                         </div>
-                        <div className="col-md-6">
+                        <div className=" mt-5 mt-lg-0">
                             <div className="dao-heading">Betnomi DAO </div>
                             <p className="body-text text-white mt-3 dao-text">
                                 Token holders effectively act as the house where
