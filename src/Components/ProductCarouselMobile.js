@@ -12,7 +12,7 @@ const ProductMobileCarousel = () => {
     return (
         <div
             id="carouselExampleIndicators1"
-            class="carousel slide col-sm-display"
+            class="carousel slide col-md-display"
             data-bs-ride="carousel"
         >
             <div class="carousel-indicators">

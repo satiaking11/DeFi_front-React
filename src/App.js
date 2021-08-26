@@ -200,9 +200,9 @@ function App() {
                             </h1>
                             <p className="body-text mt-4 mb-5">
                                 Become the house by holding the casino token in
-                                your wallet. <br />  $BNI is a reflection token backed
-                                by the revenue of the leading crypto casino with
-                                auto rewards and auto claims.
+                                your wallet. <br /> $BNI is a reflection token
+                                backed by the revenue of the leading crypto
+                                casino with auto rewards and auto claims.
                             </p>
                             <div className="header-btns">
                                 <Button
@@ -259,9 +259,9 @@ function App() {
                             products which spans many categories
                         </p>
                     </div>
-                    <div className="row flex-sm-none products">
+                    <div className="row d-none d-md-flex  products">
                         <div
-                            className="col-lg-3 col-md-4 col-sm-6 p-3"
+                            className="col-lg-3 col-md-4  p-3"
                             ref={product1}
                             onMouseEnter={onEnter}
                             onMouseLeave={onLeave}
@@ -275,7 +275,7 @@ function App() {
                         </div>
 
                         <div
-                            className="col-lg-3 col-md-4 col-sm-6 p-3"
+                            className="col-lg-3 col-md-4  p-3"
                             ref={product2}
                             onMouseEnter={onEnter}
                             onMouseLeave={onLeave}
@@ -289,7 +289,7 @@ function App() {
                         </div>
 
                         <div
-                            className="col-lg-3 col-md-4 col-sm-6 p-3"
+                            className="col-lg-3 col-md-4  p-3"
                             ref={product3}
                             onMouseEnter={onEnter}
                             onMouseLeave={onLeave}
@@ -303,7 +303,7 @@ function App() {
                         </div>
 
                         <div
-                            className="col-lg-3 col-md-4 col-sm-6 p-3"
+                            className="col-lg-3 col-md-4  p-3"
                             ref={product4}
                             onMouseEnter={onEnter}
                             onMouseLeave={onLeave}
@@ -317,7 +317,7 @@ function App() {
                         </div>
 
                         <div
-                            className="col-lg-3 col-md-4 col-sm-6 p-3"
+                            className="col-lg-3 col-md-4  p-3"
                             ref={product5}
                             onMouseEnter={onEnter}
                             onMouseLeave={onLeave}
@@ -331,7 +331,7 @@ function App() {
                         </div>
 
                         <div
-                            className="col-lg-3 col-md-4 col-sm-6 p-3"
+                            className="col-lg-3 col-md-4  p-3"
                             ref={product6}
                             onMouseEnter={onEnter}
                             onMouseLeave={onLeave}
@@ -345,7 +345,7 @@ function App() {
                         </div>
 
                         <div
-                            className="col-lg-3 col-md-4 col-sm-6 p-3"
+                            className="col-lg-3 col-md-4  p-3"
                             ref={product7}
                             onMouseEnter={onEnter}
                             onMouseLeave={onLeave}
