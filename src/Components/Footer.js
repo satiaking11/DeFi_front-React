@@ -13,7 +13,11 @@ const Footer = () => {
             <div className="solid-bottom-border">
                 <div className="container">
                     <div className="social-imgs-block">
-                        <a href="https://t.me/betnomi">
+                        <a
+                            target="_blank"
+                            href="https://t.me/betnomi"
+                            rel="noreferrer"
+                        >
                             <div className="social-img">
                                 <img
                                     className="img-fluid"
@@ -23,7 +27,11 @@ const Footer = () => {
                             </div>
                         </a>
 
-                        <a href="https://twitter.com/betnomi1">
+                        <a
+                            target="_blank"
+                            href="https://twitter.com/betnomi1"
+                            rel="noreferrer"
+                        >
                             <div className="social-img">
                                 <img
                                     className="img-fluid"
@@ -32,7 +40,11 @@ const Footer = () => {
                                 />
                             </div>
                         </a>
-                        <a href="https://discord.gg/JMQQHtkX">
+                        <a
+                            target="_blank"
+                            href="https://discord.gg/JMQQHtkX"
+                            rel="noreferrer"
+                        >
                             <div className="social-img">
                                 <img
                                     className="img-fluid"
@@ -42,7 +54,11 @@ const Footer = () => {
                             </div>
                         </a>
 
-                        <a href="https://betnomi.medium.com">
+                        <a
+                            target="_blank"
+                            href="https://betnomi.medium.com"
+                            rel="noreferrer"
+                        >
                             <div className="social-img">
                                 <img
                                     className="img-fluid"
@@ -52,7 +68,11 @@ const Footer = () => {
                             </div>
                         </a>
 
-                        <a href="https://www.reddit.com/r/Betnomi1">
+                        <a
+                            target="_blank"
+                            href="https://www.reddit.com/r/Betnomi1"
+                            rel="noreferrer"
+                        >
                             <div className="social-img">
                                 <img
                                     className="img-fluid"

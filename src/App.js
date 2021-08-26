@@ -157,6 +157,8 @@ function App() {
         });
         //WITH Timelines (cleaner, more versatile)
         var daoImg = gsap.timeline({
+            repeat: -1,
+            repeatDelay: 1,
             scrollTrigger: {
                 trigger: '.dao-img '
             }
@@ -190,7 +192,7 @@ function App() {
             <section className="main-container">
                 <Header />
 
-                <div className="container mt-3">
+                <div className="container mt-3 hero-section">
                     <div className="row row-cols-xl-2 banner align-items-center">
                         <div className=" hero-text order-2 order-xl-1 text-white p-0 mt-xl-3">
                             <h1 className="banner-heading text-uppercase mb-3 text-nowrap">
@@ -198,7 +200,7 @@ function App() {
                             </h1>
                             <p className="body-text mt-4 mb-5">
                                 Become the house by holding the casino token in
-                                your wallet. <br /> $BNI is a reflection token backed
+                                your wallet. <br />  $BNI is a reflection token backed
                                 by the revenue of the leading crypto casino with
                                 auto rewards and auto claims.
                             </p>
@@ -245,7 +247,7 @@ function App() {
                 </div>
             </section>
 
-            <section className="product-section">
+            <section id="productSection" className="product-section">
                 <div className="container products-inner-block ">
                     <div className="">
                         <h2 className="small-heading">
@@ -382,7 +384,7 @@ function App() {
                 </div>
             </section>
 
-            <div className="dao-section">
+            <div id="daoSection" className="dao-section">
                 <div className="container">
                     <div className="row row-cols-lg-2 align-items-center">
                         <div className=" d-flex justify-md-center">
@@ -481,7 +483,7 @@ function App() {
                 </div>
             </div>
 
-            <div className="token-section">
+            <div id="tokenSection" className="token-section">
                 <div className="container">
                     <div className="token-heading mb-5">
                         Token and Tokenomics

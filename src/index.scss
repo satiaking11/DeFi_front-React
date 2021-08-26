@@ -81,6 +81,83 @@ a {
         padding-left: 0 !important;
     }
 }
+
+// .dropdown-menu {
+//     margin-top: 100px;
+// }
+@media screen and (max-width: 1200px) {
+    .dashboard-dropdown {
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+.dashboard-dropdown {
+    width: 219px;
+    @media (max-width: 425px) {
+        max-width: 100%;
+    }
+}
+.dashboard-dropdown {
+    form {
+        .btn {
+            width: 290px !important;
+            position: relative;
+            left: -37px;
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .dashboard-dropdown-menu {
+        min-width: 290px !important;
+    }
+}
+
+.dashboard-dropdown-menu {
+    min-width: 290px !important;
+    position: relative;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+}
+
+// @media (max-width: 425px) {
+//     .dashboard-dropdown {
+//         .btn {
+//             width: 100% !important;
+//         }
+//     }
+// }
+.dasboard-img {
+    max-width: 118px;
+}
+.dropdown-text-2 {
+    font-family: Poppins;
+    font-weight: 500 !important;
+    font-size: 14px;
+    line-height: 18px;
+    max-width: 193px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.dask-board-deco {
+    background-color: white;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    transform: rotate(45deg);
+}
+.btn-green {
+    background-color: #6dd338 !important;
+    font-family: Poppins;
+    font-weight: 500 !important;
+    font-size: 14px !important;
+}
 .banner-heading {
     font-size: 72px !important;
     font-weight: 900;
@@ -90,6 +167,10 @@ a {
 .body-text {
     font-size: 16px !important;
     line-height: 24px !important;
+}
+
+.hero-section {
+    z-index: -1;
 }
 .header-btns {
     display: flex !important;
@@ -786,4 +867,7 @@ a {
 }
 .mt-5r {
     margin-top: 5rem;
+}
+.navbar {
+    z-index: 100 !important;
 }
