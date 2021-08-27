@@ -1,4 +1,5 @@
 #!/usr/bin/env sh
+set -uex
 npm install
 npm run build
 git rev-parse HEAD >> ./build/version.txt
