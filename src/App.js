@@ -2,22 +2,20 @@ import React, { useRef, useEffect } from 'react';
 // Gsap
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-// import banner_img from '../src/assets/images/image.png';
 import play_icon from '../src/assets/images/play.svg';
 import launch_icon from '../src/assets/images/launch.svg';
-import product_one from '../src/assets/images/product-one.svg';
-import product_two from '../src/assets/images/product-two.svg';
-import product_three from '../src/assets/images/product-three.svg';
-import product_four from '../src/assets/images/product-four.svg';
-import product_five from '../src/assets/images/product-five.svg';
-import product_six from '../src/assets/images/product-six.svg';
-import product_seven from '../src/assets/images/product-seven.svg';
-// import dao_img from '../src/assets/images/dao-img.png';
+import product_one from '../src/assets/images/products/product-one.svg';
+import product_two from '../src/assets/images/products/product-two.svg';
+import product_three from '../src/assets/images/products/product-three.svg';
+import product_four from '../src/assets/images/products/product-four.svg';
+import product_five from '../src/assets/images/products/product-five.svg';
+import product_six from '../src/assets/images/products/product-six.svg';
+import product_seven from '../src/assets/images/products/product-seven.svg';
 import arrow_icon from '../src/assets/images/arrow-icon.svg';
-import audit_item_img_1 from '../src/assets/images/audit-item-img-1.png';
-import audit_item_img_2 from '../src/assets/images/audit-item-img-2.png';
-import audit_item_img_3 from '../src/assets/images/audit-item-img-3.png';
-import audit_item_img_4 from '../src/assets/images/audit-item-img-4.png';
+import audit_item_img_1 from '../src/assets/images/security_audits/audit-item-img-1.png';
+import audit_item_img_2 from '../src/assets/images/security_audits/audit-item-img-2.png';
+import audit_item_img_3 from '../src/assets/images/security_audits/audit-item-img-3.png';
+import audit_item_img_4 from '../src/assets/images/security_audits/audit-item-img-4.png';
 import betnomi from '../src/assets/images/betnomi-logo.svg';
 import TokenomicsDesktop from './Components/TokenomicsDesktop';
 import Partners from './Components/Partner';
@@ -31,16 +29,16 @@ import ReportMobileCarousel from './Components/ReportCarouselMobile';
 import CoinDetailBox from './Components/CoinDetailBox';
 import Button from './Atoms/Button';
 
-import perсent from '../src/assets/images/animation_assets/percent.png';
-import greenTick from '../src/assets/images/animation_assets/green_tick.svg';
-import person1 from '../src/assets/images/animation_assets/person_1.png';
-import person2 from '../src/assets/images/animation_assets/person_2.png';
-import person3 from '../src/assets/images/animation_assets/person_3.png';
-import person4 from '../src/assets/images/animation_assets/person_4.png';
-import graph_green from '../src/assets/images/animation_assets/graph_green.png';
-import graph_orange from '../src/assets/images/animation_assets/graph_orange.png';
-import graph_yellow from '../src/assets/images/animation_assets/graph_yellow.png';
-import graph_blue from '../src/assets/images/animation_assets/graph_blue.png';
+import perсent from '../src/assets/images/dao/percent.png';
+import greenTick from '../src/assets/images/dao/green_tick.svg';
+import person1 from '../src/assets/images/dao/person_1.png';
+import person2 from '../src/assets/images/dao/person_2.png';
+import person3 from '../src/assets/images/dao/person_3.png';
+import person4 from '../src/assets/images/dao/person_4.png';
+import graph_green from '../src/assets/images/dao/graph_green.png';
+import graph_orange from '../src/assets/images/dao/graph_orange.png';
+import graph_yellow from '../src/assets/images/dao/graph_yellow.png';
+import graph_blue from '../src/assets/images/dao/graph_blue.png';
 import Cards from './Animations/Cards';
 
 // Custom style
@@ -389,7 +387,7 @@ function App() {
                     <div className="row row-cols-lg-2 align-items-center">
                         <div className=" d-flex justify-md-center">
                             <div className="dao-img  m-auto m-lg-0">
-                                <div class="center-img">
+                                <div className="center-img">
                                     <img
                                         className="percent"
                                         src={perсent}

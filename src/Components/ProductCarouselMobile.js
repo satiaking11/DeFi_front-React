@@ -1,26 +1,26 @@
 import React from 'react';
 import ProductCard from '../Atoms/ProductCard';
-import product_one from '../../src/assets/images/product-one.svg';
-import product_two from '../../src/assets/images/product-two.svg';
-import product_three from '../../src/assets/images/product-three.svg';
-import product_four from '../../src/assets/images/product-four.svg';
-import product_five from '../../src/assets/images/product-five.svg';
-import product_six from '../../src/assets/images/product-six.svg';
-import product_seven from '../../src/assets/images/product-seven.svg';
+import product_one from '../../src/assets/images/products/product-one.svg';
+import product_two from '../../src/assets/images/products/product-two.svg';
+import product_three from '../../src/assets/images/products/product-three.svg';
+import product_four from '../../src/assets/images/products/product-four.svg';
+import product_five from '../../src/assets/images/products/product-five.svg';
+import product_six from '../../src/assets/images/products/product-six.svg';
+import product_seven from '../../src/assets/images/products/product-seven.svg';
 
 const ProductMobileCarousel = () => {
     return (
         <div
             id="carouselExampleIndicators1"
-            class="carousel slide col-sm-display"
+            className="carousel slide col-sm-display"
             data-bs-ride="carousel"
         >
-            <div class="carousel-indicators">
+            <div className="carousel-indicators">
                 <button
                     type="button"
                     data-bs-target="#carouselExampleIndicators"
                     data-bs-slide-to="0"
-                    class="active"
+                    className="active"
                     aria-current="true"
                     aria-label="Slide 1"
                 ></button>
@@ -67,8 +67,8 @@ const ProductMobileCarousel = () => {
                     aria-label="Slide 8"
                 ></button>
             </div>
-            <div class="carousel-inner">
-                <div class="carousel-item active">
+            <div className="carousel-inner">
+                <div className="carousel-item active">
                     <div className="p-3 products">
                         <ProductCard
                             image={product_one}
@@ -79,7 +79,7 @@ const ProductMobileCarousel = () => {
                     </div>
                 </div>
 
-                <div class="carousel-item">
+                <div className="carousel-item">
                     <div className="p-3 products">
                         <ProductCard
                             image={product_two}
@@ -90,7 +90,7 @@ const ProductMobileCarousel = () => {
                     </div>
                 </div>
 
-                <div class="carousel-item">
+                <div className="carousel-item">
                     <div className="p-3 products">
                         <ProductCard
                             image={product_three}
@@ -101,7 +101,7 @@ const ProductMobileCarousel = () => {
                     </div>
                 </div>
 
-                <div class="carousel-item">
+                <div className="carousel-item">
                     <div className="p-3 products">
                         <ProductCard
                             image={product_four}
@@ -112,7 +112,7 @@ const ProductMobileCarousel = () => {
                     </div>
                 </div>
 
-                <div class="carousel-item">
+                <div className="carousel-item">
                     <div className="p-3 products">
                         <ProductCard
                             image={product_five}
@@ -123,7 +123,7 @@ const ProductMobileCarousel = () => {
                     </div>
                 </div>
 
-                <div class="carousel-item">
+                <div className="carousel-item">
                     <div className="p-3 products">
                         <ProductCard
                             image={product_six}
@@ -134,7 +134,7 @@ const ProductMobileCarousel = () => {
                     </div>
                 </div>
 
-                <div class="carousel-item">
+                <div className="carousel-item">
                     <div className="p-3 products">
                         <ProductCard
                             image={product_seven}
@@ -145,7 +145,7 @@ const ProductMobileCarousel = () => {
                     </div>
                 </div>
 
-                <div class="carousel-item">
+                <div className="carousel-item">
                     <div className="align-items-center justify-content-center d-flex p-0 products last-product-block">
                         <div className="game-quantity-block">
                             Casino With <br />{' '}
@@ -155,28 +155,28 @@ const ProductMobileCarousel = () => {
                 </div>
             </div>
             <button
-                class="carousel-control-prev"
+                className="carousel-control-prev"
                 type="button"
                 data-bs-target="#carouselExampleIndicators1"
                 data-bs-slide="prev"
             >
                 <span
-                    class="carousel-control-prev-icon"
+                    className="carousel-control-prev-icon"
                     aria-hidden="true"
                 ></span>
-                <span class="visually-hidden">Previous</span>
+                <span className="visually-hidden">Previous</span>
             </button>
             <button
-                class="carousel-control-next"
+                className="carousel-control-next"
                 type="button"
                 data-bs-target="#carouselExampleIndicators1"
                 data-bs-slide="next"
             >
                 <span
-                    class="carousel-control-next-icon"
+                    className="carousel-control-next-icon"
                     aria-hidden="true"
                 ></span>
-                <span class="visually-hidden">Next</span>
+                <span className="visually-hidden">Next</span>
             </button>
         </div>
     );

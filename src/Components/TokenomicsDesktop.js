@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
-import token_1_icon from '../../src/assets/images/token-1-icon.svg';
-import token_2_icon from '../../src/assets/images/token-2-icon.svg';
-import token_img from '../../src/assets/images/token-img.svg';
-import token_3_icon from '../../src/assets/images/token-3-icon.svg';
-import token_4_icon from '../../src/assets/images/token-4-icon.svg';
+import token_1_icon from '../../src/assets/images/token_tokenomics/token-1-icon.svg';
+import token_2_icon from '../../src/assets/images/token_tokenomics/token-2-icon.svg';
+import token_img from '../../src/assets/images/token_tokenomics/token-img.svg';
+import token_3_icon from '../../src/assets/images/token_tokenomics/token-3-icon.svg';
+import token_4_icon from '../../src/assets/images/token_tokenomics/token-4-icon.svg';
 import DropdownArea from '../Atoms/DropdownCollapseArea';
 import DropdownButton from '../Atoms/DropdownButton';
 

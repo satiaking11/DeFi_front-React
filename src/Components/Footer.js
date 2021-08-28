@@ -1,9 +1,9 @@
 import React from 'react';
-import social_img_1 from '../../src/assets/images/social-img-1.svg';
-import social_img_2 from '../../src/assets/images/social-img-2.svg';
-import social_img_3 from '../../src/assets/images/social-img-3.svg';
-import social_img_4 from '../../src/assets/images/social-img-4.svg';
-import social_img_5 from '../../src/assets/images/social-img-5.svg';
+import social_img_1 from '../../src/assets/images/socialmedia/social-img-1.svg';
+import social_img_2 from '../../src/assets/images/socialmedia/social-img-2.svg';
+import social_img_3 from '../../src/assets/images/socialmedia/social-img-3.svg';
+import social_img_4 from '../../src/assets/images/socialmedia/social-img-4.svg';
+import social_img_5 from '../../src/assets/images/socialmedia/social-img-5.svg';
 import footer_img_1 from '../../src/assets/images/footer-img-1.svg';
 import footer_img_2 from '../../src/assets/images/footer-img-2.svg';
 

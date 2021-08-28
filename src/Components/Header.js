@@ -7,13 +7,13 @@ import Button from '../Atoms/Button';
 const Header = () => {
     return (
         <div className="container">
-            <nav class="navbar navbar-expand-xl navbar-dark ">
-                <div class="container-fluid p-0">
-                    <a class="navbar-brand" href="/">
+            <nav className="navbar navbar-expand-xl navbar-dark ">
+                <div className="container-fluid p-0">
+                    <a className="navbar-brand" href="/">
                         <img src={logo} alt="logo" />
                     </a>
                     <button
-                        class="navbar-toggler border-0"
+                        className="navbar-toggler border-0"
                         type="button"
                         data-bs-toggle="collapse"
                         data-bs-target="#navbarSupportedContent"
@@ -21,14 +21,14 @@ const Header = () => {
                         aria-expanded="false"
                         aria-label="Toggle navigation"
                     >
-                        <span class="navbar-toggler-icon"></span>
+                        <span className="navbar-toggler-icon"></span>
                     </button>
                     <div
-                        class="collapse navbar-collapse pt-1"
+                        className="collapse navbar-collapse pt-1"
                         id="navbarSupportedContent"
                     >
-                        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-                            <li class="nav-item">
+                        <ul className="navbar-nav mx-auto mb-2 mb-lg-0">
+                            <li className="nav-item">
                                 <a
                                     className="nav-link"
                                     aria-current="page"
@@ -37,50 +37,50 @@ const Header = () => {
                                     Ecosystem
                                 </a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#daoSection">
+                            <li className="nav-item">
+                                <a className="nav-link" href="#daoSection">
                                     DAO
                                 </a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#tokenSection">
+                            <li className="nav-item">
+                                <a className="nav-link" href="#tokenSection">
                                     Token
                                 </a>
                             </li>
-                            <li class="nav-item">
+                            <li className="nav-item">
                                 <a
                                     target="_blank"
-                                    class="nav-link"
+                                    className="nav-link"
                                     href="/"
                                     rel="noreferrer"
                                 >
                                     Buy $BNI
                                 </a>
                             </li>
-                            <li class="nav-item">
+                            <li className="nav-item">
                                 <a
                                     target="_blank"
-                                    class="nav-link"
+                                    className="nav-link"
                                     href="/"
                                     rel="noreferrer"
                                 >
                                     Play
                                 </a>
                             </li>
-                            <li class="nav-item">
+                            <li className="nav-item">
                                 <a
                                     target="_blank"
-                                    class="nav-link"
+                                    className="nav-link"
                                     href="/"
                                     rel="noreferrer"
                                 >
                                     Docs
                                 </a>
                             </li>
-                            <li class="nav-item">
+                            <li className="nav-item">
                                 <a
                                     target="_blank"
-                                    class="nav-link"
+                                    className="nav-link"
                                     href="/"
                                     rel="noreferrer"
                                 >
@@ -89,7 +89,7 @@ const Header = () => {
                             </li>
                         </ul>
 
-                        <div class="dropdown dashboard-dropdown ">
+                        <div className="dropdown dashboard-dropdown ">
                             <div
                                 className="dropdown-toggle text-center  d-sm-flex align-items-center "
                                 type="button"
@@ -107,11 +107,12 @@ const Header = () => {
                                 </form>
                             </div>
                             <div
+                                style={{ position: 'absolute' }}
                                 className="dropdown-menu dashboard-dropdown-menu dropdown-menu-white  p-2  mt-3 "
                                 aria-labelledby="dropdownMenuButton2"
                             >
                                 <div className="d-flex flex-column justify-content-center m-auto">
-                                    <div class="dask-board-deco"></div>
+                                    <div className="dask-board-deco"></div>
                                     <img
                                         className="dasboard-img m-auto mt-4"
                                         src={dashboard}

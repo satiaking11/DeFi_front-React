@@ -1,18 +1,18 @@
 import React from 'react';
-import token_1_icon from '../../src/assets/images/token-1-icon.svg';
-import token_2_icon from '../../src/assets/images/token-2-icon.svg';
-import token_3_icon from '../../src/assets/images/token-3-icon.svg';
-import token_4_icon from '../../src/assets/images/token-4-icon.svg';
-import token_5_icon from '../../src/assets/images/token-5-icon.svg';
-import token_arrow_right from '../../src/assets/images/token-arrow-right.svg';
+import token_1_icon from '../../src/assets/images/token_tokenomics/token-1-icon.svg';
+import token_2_icon from '../../src/assets/images/token_tokenomics/token-2-icon.svg';
+import token_3_icon from '../../src/assets/images/token_tokenomics/token-3-icon.svg';
+import token_4_icon from '../../src/assets/images/token_tokenomics/token-4-icon.svg';
+import token_5_icon from '../../src/assets/images/token_tokenomics/token-5-icon.svg';
+import token_arrow_right from '../../src/assets/images/token_tokenomics/token-arrow-right.svg';
 
 const TokenomicsMobile = () => {
     return (
         <div className="col-md-display ">
-            <div class="accordion" id="accordionExample">
-                <div class="accordion-item border-0">
+            <div className="accordion" id="accordionExample">
+                <div className="accordion-item border-0">
                     <button
-                        class="btn dropdown-toggle"
+                        className="btn dropdown-toggle"
                         type="button"
                         data-bs-toggle="collapse"
                         data-bs-target="#collapseOne"
@@ -40,7 +40,7 @@ const TokenomicsMobile = () => {
 
                     <div
                         id="collapseOne"
-                        class="accordion-collapse collapse show p-3"
+                        className="accordion-collapse collapse show p-3"
                         aria-labelledby="headingOne"
                         data-bs-parent="#accordionExample"
                     >
@@ -59,9 +59,9 @@ const TokenomicsMobile = () => {
                     </div>
                 </div>
 
-                <div class="accordion-item border-0">
+                <div className="accordion-item border-0">
                     <button
-                        class="btn dropdown-toggle"
+                        className="btn dropdown-toggle"
                         type="button"
                         data-bs-toggle="collapse"
                         data-bs-target="#collapseTwo"
@@ -90,7 +90,7 @@ const TokenomicsMobile = () => {
                     </button>
                     <div
                         id="collapseTwo"
-                        class="accordion-collapse collapse p-3"
+                        className="accordion-collapse collapse p-3"
                         aria-labelledby="headingTwo"
                         data-bs-parent="#accordionExample"
                     >
@@ -108,9 +108,9 @@ const TokenomicsMobile = () => {
                         </p>
                     </div>
                 </div>
-                <div class="accordion-item border-0">
+                <div className="accordion-item border-0">
                     <button
-                        class="btn dropdown-toggle"
+                        className="btn dropdown-toggle"
                         type="button"
                         data-bs-toggle="collapse"
                         data-bs-target="#collapseThree"
@@ -139,7 +139,7 @@ const TokenomicsMobile = () => {
                     </button>
                     <div
                         id="collapseThree"
-                        class="accordion-collapse collapse p-3"
+                        className="accordion-collapse collapse p-3"
                         aria-labelledby="headingThree"
                         data-bs-parent="#accordionExample"
                     >
@@ -157,9 +157,9 @@ const TokenomicsMobile = () => {
                         </p>
                     </div>
                 </div>
-                <div class="accordion-item border-0">
+                <div className="accordion-item border-0">
                     <button
-                        class="btn dropdown-toggle"
+                        className="btn dropdown-toggle"
                         type="button"
                         data-bs-toggle="collapse"
                         data-bs-target="#collapseFour"
@@ -186,7 +186,7 @@ const TokenomicsMobile = () => {
                     </button>
                     <div
                         id="collapseFour"
-                        class="accordion-collapse collapse p-3"
+                        className="accordion-collapse collapse p-3"
                         aria-labelledby="headingFour"
                         data-bs-parent="#accordionExample"
                     >
@@ -204,9 +204,9 @@ const TokenomicsMobile = () => {
                         </p>
                     </div>
                 </div>
-                <div class="accordion-item border-0">
+                <div className="accordion-item border-0">
                     <button
-                        class="btn dropdown-toggle"
+                        className="btn dropdown-toggle"
                         type="button"
                         data-bs-toggle="collapse"
                         data-bs-target="#collapseFive"
@@ -233,7 +233,7 @@ const TokenomicsMobile = () => {
                     </button>
                     <div
                         id="collapseFive"
-                        class="accordion-collapse collapse p-3"
+                        className="accordion-collapse collapse p-3"
                         aria-labelledby="headingFive"
                         data-bs-parent="#accordionExample"
                     >

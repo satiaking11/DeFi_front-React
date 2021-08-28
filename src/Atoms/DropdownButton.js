@@ -1,11 +1,11 @@
 import React from 'react';
-import token_arrow_right from '../../src/assets/images/token-arrow-right.svg';
-import token_arrow_right_green from '../../src/assets/images/token-arrow-right-green.svg';
+import token_arrow_right from '../../src/assets/images/token_tokenomics/token-arrow-right.svg';
+import token_arrow_right_green from '../../src/assets/images/token_tokenomics/token-arrow-right-green.svg';
 
 const DropdownButton = ({ image, heading, display, onPress }) => {
     return (
         <button
-            class="btn dropdown-toggle mt-0"
+            className="btn dropdown-toggle mt-0"
             type="button"
             data-bs-toggle="collapse"
             aria-expanded="false"

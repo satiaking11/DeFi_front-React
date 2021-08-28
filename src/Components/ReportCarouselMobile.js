@@ -1,23 +1,23 @@
 import React from 'react';
-import audit_link_icon from '../../src/assets/images/audit-link-icon.svg';
-import audit_item_img_1 from '../../src/assets/images/audit-item-img-1.png';
-import audit_item_img_2 from '../../src/assets/images/audit-item-img-2.png';
-import audit_item_img_3 from '../../src/assets/images/audit-item-img-3.png';
-import audit_item_img_4 from '../../src/assets/images/audit-item-img-4.png';
+import audit_link_icon from '../../src/assets/images/security_audits/audit-link-icon.svg';
+import audit_item_img_1 from '../../src/assets/images/security_audits/audit-item-img-1.png';
+import audit_item_img_2 from '../../src/assets/images/security_audits/audit-item-img-2.png';
+import audit_item_img_3 from '../../src/assets/images/security_audits/audit-item-img-3.png';
+import audit_item_img_4 from '../../src/assets/images/security_audits/audit-item-img-4.png';
 
 const ReportMobileCarousel = () => {
     return (
         <div
             id="carouselExampleIndicators"
-            class="carousel slide col-sm-display"
+            className="carousel slide col-sm-display"
             data-bs-ride="carousel"
         >
-            <div class="carousel-indicators slider-nav-clr">
+            <div className="carousel-indicators slider-nav-clr">
                 <button
                     type="button"
                     data-bs-target="#carouselExampleIndicators"
                     data-bs-slide-to="0"
-                    class="active"
+                    className="active"
                     aria-current="true"
                     aria-label="Slide 1"
                 ></button>
@@ -40,8 +40,8 @@ const ReportMobileCarousel = () => {
                     aria-label="Slide 4"
                 ></button>
             </div>
-            <div class="carousel-inner">
-                <div class="carousel-item active">
+            <div className="carousel-inner">
+                <div className="carousel-item active">
                     <div className="p-3">
                         <div className="audit-items">
                             <div className="audit-item-img">
@@ -75,7 +75,7 @@ const ReportMobileCarousel = () => {
                     </div>
                 </div>
 
-                <div class="carousel-item">
+                <div className="carousel-item">
                     <div className="p-3">
                         <div className="audit-items">
                             <div className="audit-item-img">
@@ -106,7 +106,7 @@ const ReportMobileCarousel = () => {
                     </div>
                 </div>
 
-                <div class="carousel-item">
+                <div className="carousel-item">
                     <div className="p-3">
                         <div className="audit-items">
                             <div className="audit-item-img">
@@ -140,7 +140,7 @@ const ReportMobileCarousel = () => {
                     </div>
                 </div>
 
-                <div class="carousel-item">
+                <div className="carousel-item">
                     <div className="col-lg-3 col-md-4 col-sm-6 p-3">
                         <div className="audit-items">
                             <div className="audit-item-img">
@@ -173,28 +173,28 @@ const ReportMobileCarousel = () => {
                 </div>
             </div>
             <button
-                class="carousel-control-prev"
+                className="carousel-control-prev"
                 type="button"
                 data-bs-target="#carouselExampleIndicators"
                 data-bs-slide="prev"
             >
                 <span
-                    class="carousel-control-prev-icon"
+                    className="carousel-control-prev-icon"
                     aria-hidden="true"
                 ></span>
-                <span class="visually-hidden">Previous</span>
+                <span className="visually-hidden">Previous</span>
             </button>
             <button
-                class="carousel-control-next"
+                className="carousel-control-next"
                 type="button"
                 data-bs-target="#carouselExampleIndicators"
                 data-bs-slide="next"
             >
                 <span
-                    class="carousel-control-next-icon"
+                    className="carousel-control-next-icon"
                     aria-hidden="true"
                 ></span>
-                <span class="visually-hidden">Next</span>
+                <span className="visually-hidden">Next</span>
             </button>
         </div>
     );

@@ -82,8 +82,8 @@ a {
     }
 }
 
-// .dropdown-menu {
-//     margin-top: 100px;
+// .dashboard-dropdown-menu {
+//     position: absolute !important;
 // }
 @media screen and (max-width: 1200px) {
     .dashboard-dropdown {
@@ -872,12 +872,3 @@ a {
 .navbar {
     z-index: 100 !important;
 }
-
-// .audit-section-cards {
-//     flex: none !important;
-// }
-// @media screen and (max-width: 450px) {
-//     .audit-section-cards {
-//         display: flex !important;
-//     }
-// }

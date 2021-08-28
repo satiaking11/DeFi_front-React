@@ -1,5 +1,5 @@
 import React from 'react';
-import audit_link_icon from '../../src/assets/images/audit-link-icon.svg';
+import audit_link_icon from '../../src/assets/images/security_audits/audit-link-icon.svg';
 
 const ReportCard = ({ image, text }) => {
     return (

@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
-import partner_img_1 from '../../src/assets/images/partner-img-1.svg';
-import partner_img_2 from '../../src/assets/images/partner-img-2.svg';
-import partner_img_3 from '../../src/assets/images/partner-img-3.svg';
-import partner_img_4 from '../../src/assets/images/partner-img-4.png';
-import partner_img_5 from '../../src/assets/images/partner-img-5.png';
-import partner_img_6 from '../../src/assets/images/partner-img-6.png';
-import partner_img_7 from '../../src/assets/images/partner-img-7.png';
-import partner_img_8 from '../../src/assets/images/partner-img-8.svg';
-import partner_img_9 from '../../src/assets/images/partner-img-9.svg';
+import partner_img_1 from '../../src/assets/images/partners/partner-img-1.svg';
+import partner_img_2 from '../../src/assets/images/partners/partner-img-2.svg';
+import partner_img_3 from '../../src/assets/images/partners/partner-img-3.svg';
+import partner_img_4 from '../../src/assets/images/partners/partner-img-4.png';
+import partner_img_5 from '../../src/assets/images/partners/partner-img-5.png';
+import partner_img_6 from '../../src/assets/images/partners/partner-img-6.png';
+import partner_img_7 from '../../src/assets/images/partners/partner-img-7.png';
+import partner_img_8 from '../../src/assets/images/partners/partner-img-8.svg';
+import partner_img_9 from '../../src/assets/images/partners/partner-img-9.svg';
 
 const Partners = (props) => {
     const [ShowMore, setShowMore] = useState(false);
