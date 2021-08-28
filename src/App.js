@@ -2,7 +2,7 @@ import React, { useRef, useEffect } from 'react';
 // Gsap
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import banner_img from '../src/assets/images/image.png';
+// import banner_img from '../src/assets/images/image.png';
 import play_icon from '../src/assets/images/play.svg';
 import launch_icon from '../src/assets/images/launch.svg';
 import product_one from '../src/assets/images/product-one.svg';
@@ -12,7 +12,7 @@ import product_four from '../src/assets/images/product-four.svg';
 import product_five from '../src/assets/images/product-five.svg';
 import product_six from '../src/assets/images/product-six.svg';
 import product_seven from '../src/assets/images/product-seven.svg';
-import dao_img from '../src/assets/images/dao-img.png';
+// import dao_img from '../src/assets/images/dao-img.png';
 import arrow_icon from '../src/assets/images/arrow-icon.svg';
 import audit_item_img_1 from '../src/assets/images/audit-item-img-1.png';
 import audit_item_img_2 from '../src/assets/images/audit-item-img-2.png';
@@ -259,9 +259,9 @@ function App() {
                             products which spans many categories
                         </p>
                     </div>
-                    <div className="row d-none d-md-flex  products">
+                    <div className="row row-cols-lg-4 row-cols-md-3 row-cols-sm-2 flex-sm-none  products">
                         <div
-                            className="col-lg-3 col-md-4  p-3"
+                            className="  p-3"
                             ref={product1}
                             onMouseEnter={onEnter}
                             onMouseLeave={onLeave}
@@ -275,7 +275,7 @@ function App() {
                         </div>
 
                         <div
-                            className="col-lg-3 col-md-4  p-3"
+                            className="  p-3"
                             ref={product2}
                             onMouseEnter={onEnter}
                             onMouseLeave={onLeave}
@@ -289,7 +289,7 @@ function App() {
                         </div>
 
                         <div
-                            className="col-lg-3 col-md-4  p-3"
+                            className="  p-3"
                             ref={product3}
                             onMouseEnter={onEnter}
                             onMouseLeave={onLeave}
@@ -303,7 +303,7 @@ function App() {
                         </div>
 
                         <div
-                            className="col-lg-3 col-md-4  p-3"
+                            className="  p-3"
                             ref={product4}
                             onMouseEnter={onEnter}
                             onMouseLeave={onLeave}
@@ -317,7 +317,7 @@ function App() {
                         </div>
 
                         <div
-                            className="col-lg-3 col-md-4  p-3"
+                            className="  p-3"
                             ref={product5}
                             onMouseEnter={onEnter}
                             onMouseLeave={onLeave}
@@ -331,7 +331,7 @@ function App() {
                         </div>
 
                         <div
-                            className="col-lg-3 col-md-4  p-3"
+                            className="  p-3"
                             ref={product6}
                             onMouseEnter={onEnter}
                             onMouseLeave={onLeave}
@@ -345,7 +345,7 @@ function App() {
                         </div>
 
                         <div
-                            className="col-lg-3 col-md-4  p-3"
+                            className="  p-3"
                             ref={product7}
                             onMouseEnter={onEnter}
                             onMouseLeave={onLeave}
@@ -359,7 +359,7 @@ function App() {
                         </div>
 
                         <div
-                            className="col-lg-3 col-md-4 col-sm-6 align-items-center justify-content-center d-flex p-0 products last-product-block"
+                            className="  align-items-center justify-content-center d-flex p-0 products last-product-block"
                             ref={product8}
                             onMouseEnter={onEnter}
                             onMouseLeave={onLeave}
@@ -503,8 +503,8 @@ function App() {
                         blockchain security.
                     </p>
 
-                    <div className="row mt-5 padding-mobile flex-sm-none">
-                        <div className="col-lg-3 col-md-4 col-sm-6 p-3">
+                    <div className="audit-section-cards row row-cols-lg-4 row-cols-md-3 row-cols-sm-2 mt-5 padding-mobile flex-sm-none">
+                        <div className=" p-3">
                             <ReportCard
                                 image={audit_item_img_1}
                                 text="Quantstamp’s mission is to secure the
@@ -516,7 +516,7 @@ function App() {
                             />
                         </div>
 
-                        <div className="col-lg-3 col-md-4 col-sm-6 p-3">
+                        <div className=" p-3">
                             <ReportCard
                                 image={audit_item_img_2}
                                 text="MixBytes is a team of experienced developers
@@ -526,7 +526,7 @@ function App() {
                             />
                         </div>
 
-                        <div className="col-lg-3 col-md-4 col-sm-6 p-3">
+                        <div className=" p-3">
                             <ReportCard
                                 image={audit_item_img_3}
                                 text="Sigmaprime has an extensive background in
@@ -538,7 +538,7 @@ function App() {
                             />
                         </div>
 
-                        <div className="col-lg-3 col-md-4 col-sm-6 p-3">
+                        <div className=" p-3">
                             <ReportCard
                                 image={audit_item_img_4}
                                 text="Quantstamp’s mission is to secure the

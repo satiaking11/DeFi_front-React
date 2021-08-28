@@ -94,7 +94,7 @@ a {
 }
 .dashboard-dropdown {
     width: 219px;
-    @media (max-width: 425px) {
+    @media (max-width: 430px) {
         max-width: 100%;
     }
 }
@@ -401,6 +401,7 @@ a {
         text-align: center;
         margin-top: 16px;
     }
+
     .audit-items {
         padding: 26px 22px;
         background-color: #ffffff;
@@ -432,7 +433,7 @@ a {
         position: relative;
         margin: auto;
         margin-top: 5%;
-        @media (max-width: 425px) {
+        @media (max-width: 430px) {
             margin-top: 17%;
         }
 
@@ -666,7 +667,7 @@ a {
     }
 }
 
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 430px) {
     .products-inner-block {
         padding: 60px 20px !important;
     }
@@ -871,3 +872,12 @@ a {
 .navbar {
     z-index: 100 !important;
 }
+
+// .audit-section-cards {
+//     flex: none !important;
+// }
+// @media screen and (max-width: 450px) {
+//     .audit-section-cards {
+//         display: flex !important;
+//     }
+// }
